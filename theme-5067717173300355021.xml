@@ -1,0 +1,2238 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<head>
+
+  <script>
+  if (/Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    window.location.href = &quot;http://www.mobilmacizle.it&quot;;
+  }
+  </script>
+
+  <script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-371528584'/>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag(&#39;js&#39;, new Date());
+    gtag(&#39;config&#39;, &#39;G-371528584&#39;);
+  </script>
+
+  <link href='https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&amp;family=Barlow:wght@300;400;500;600&amp;display=swap' rel='stylesheet'/>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
+  <!-- ========== SEO META TAGS ========== -->
+  <b:include data='blog' name='all-head-content'/>
+
+  <!-- Viewport & Charset -->
+  <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+  <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+
+  <!-- Language & Locale -->
+  <meta content='turkish' name='language'/>
+  <meta content='tr_TR' property='og:locale'/>
+
+  <!-- ===== DYNAMIC TITLE ===== -->
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <title>Selçuksports İzle - Canlı Maç İzle | Taraftarium24 | Trgool | Trgoals | Justin TV</title>
+  <b:else/>
+    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+      <b:loop values='data:posts' var='post'>
+        <title><data:post.title/> | Canlı Maç İzle - Selçuksports</title>
+      </b:loop>
+    <b:else/>
+      <title><data:view.title.escaped/> | Selçuksports İzle - Canlı Maç</title>
+    </b:if>
+  </b:if>
+
+  <!-- ===== DYNAMIC META DESCRIPTION ===== -->
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <meta content='Selçuksports izle, Taraftarium24, Trgoals, Trgool, Justin TV izle, İnat TV izle, Canlı maç izle, bedava maç yayını. Bein Sports, S Sport, Smart Spor kanallarını ücretsiz izle.' name='description'/>
+  <b:else/>
+    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+      <b:loop values='data:posts' var='post'>
+        <b:if cond='data:post.snippet'>
+          <meta expr:content='data:post.snippet + &quot; | Canlı maç izle, selçuksports, taraftarium24, trgoals, trgool, justin tv, inat tv izle.&quot;' name='description'/>
+        <b:else/>
+          <meta content='Canlı maç izle, selçuksports izle, taraftarium24, trgoals, trgool, justin tv izle, inat tv izle, bedava maç yayını.' name='description'/>
+        </b:if>
+      </b:loop>
+    <b:else/>
+      <meta content='Selçuksports izle, Taraftarium24, Trgoals, Trgool, Justin TV izle, İnat TV izle, Canlı maç izle, bedava maç yayını.' name='description'/>
+    </b:if>
+  </b:if>
+
+  <!-- ===== KEYWORDS ===== -->
+  <meta content='selçuksports izle, selcuksports, trgoals, trgoals izle, trgool, trgool izle, taraftarium24, taraftarium 24 izle, justin tv izle, justin tv, maç izle, canlı maç izle, inat tv izle, inat tv, bein sports izle, bedava maç izle, lig tv izle, netspor izle, webspor izle, smart spor izle, s sport izle, canlı spor, futbol izle' name='keywords'/>
+
+  <!-- ===== ROBOTS ===== -->
+  <meta content='index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' name='robots'/>
+  <meta content='index, follow' name='googlebot'/>
+
+  <!-- ===== CANONICAL ===== -->
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <link expr:href='data:blog.homepageUrl' rel='canonical'/>
+  <b:else/>
+    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+      <b:loop values='data:posts' var='post'>
+        <link expr:href='data:post.url.canonical' rel='canonical'/>
+      </b:loop>
+    </b:if>
+  </b:if>
+
+  <!-- ===== OPEN GRAPH (Facebook/WhatsApp) ===== -->
+  <meta content='website' property='og:type'/>
+  <meta content='tr_TR' property='og:locale'/>
+  <meta expr:content='data:blog.title' property='og:site_name'/>
+
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <meta content='Selçuksports İzle - Canlı Maç İzle | Taraftarium24 | Trgool | Trgoals' property='og:title'/>
+    <meta content='Selçuksports izle, Taraftarium24, Trgoals, Trgool, Justin TV izle, İnat TV izle, Canlı maç izle, bedava maç yayını.' property='og:description'/>
+    <meta expr:content='data:blog.homepageUrl' property='og:url'/>
+    <meta content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipdbAtHRmfNR57Vji-6A3E_i6jVIj7byHfaLdcQt49j7EDCX1y1slQARxM6Pk-Od4pins2MONdVNzKsHa7v7UtCRUHyRBje1ImrJUN1CotJqlyFGUt4EEirCcVqT_Ji-w0AGM0OjzN6fg/s1600/ligtvizlesene5.png' property='og:image'/>
+    <meta content='1200' property='og:image:width'/>
+    <meta content='630' property='og:image:height'/>
+  <b:else/>
+    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+      <b:loop values='data:posts' var='post'>
+        <meta expr:content='data:post.title + &quot; | Canlı Maç İzle - Selçuksports&quot;' property='og:title'/>
+        <b:if cond='data:post.snippet'>
+          <meta expr:content='data:post.snippet' property='og:description'/>
+        </b:if>
+        <meta expr:content='data:post.url.canonical' property='og:url'/>
+        <b:if cond='data:post.firstImageUrl'>
+          <meta expr:content='data:post.firstImageUrl' property='og:image'/>
+        <b:else/>
+          <meta content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipdbAtHRmfNR57Vji-6A3E_i6jVIj7byHfaLdcQt49j7EDCX1y1slQARxM6Pk-Od4pins2MONdVNzKsHa7v7UtCRUHyRBje1ImrJUN1CotJqlyFGUt4EEirCcVqT_Ji-w0AGM0OjzN6fg/s1600/ligtvizlesene5.png' property='og:image'/>
+        </b:if>
+        <meta content='article' property='og:type'/>
+        <meta expr:content='data:post.timestampISO8601' property='article:published_time'/>
+      </b:loop>
+    </b:if>
+  </b:if>
+
+  <!-- ===== TWITTER CARD ===== -->
+  <meta content='summary_large_image' name='twitter:card'/>
+  <meta content='@NazifSpor' name='twitter:site'/>
+  <meta content='@NazifSpor' name='twitter:creator'/>
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <meta content='Selçuksports İzle - Canlı Maç İzle | Taraftarium24 | Trgool | Trgoals' name='twitter:title'/>
+    <meta content='Selçuksports izle, Taraftarium24, Trgoals, Trgool, Justin TV izle, İnat TV izle, Canlı maç izle, bedava maç yayını.' name='twitter:description'/>
+    <meta content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipdbAtHRmfNR57Vji-6A3E_i6jVIj7byHfaLdcQt49j7EDCX1y1slQARxM6Pk-Od4pins2MONdVNzKsHa7v7UtCRUHyRBje1ImrJUN1CotJqlyFGUt4EEirCcVqT_Ji-w0AGM0OjzN6fg/s1600/ligtvizlesene5.png' name='twitter:image'/>
+  <b:else/>
+    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+      <b:loop values='data:posts' var='post'>
+        <meta expr:content='data:post.title' name='twitter:title'/>
+        <b:if cond='data:post.snippet'><meta expr:content='data:post.snippet' name='twitter:description'/></b:if>
+        <b:if cond='data:post.firstImageUrl'>
+          <meta expr:content='data:post.firstImageUrl' name='twitter:image'/>
+        <b:else/>
+          <meta content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipdbAtHRmfNR57Vji-6A3E_i6jVIj7byHfaLdcQt49j7EDCX1y1slQARxM6Pk-Od4pins2MONdVNzKsHa7v7UtCRUHyRBje1ImrJUN1CotJqlyFGUt4EEirCcVqT_Ji-w0AGM0OjzN6fg/s1600/ligtvizlesene5.png' name='twitter:image'/>
+        </b:if>
+      </b:loop>
+    </b:if>
+  </b:if>
+
+  <!-- ===== SCHEMA.ORG STRUCTURED DATA ===== -->
+  <!-- WebSite Schema (Sitelinks Searchbox için) -->
+  <script type='application/ld+json'>
+  {
+    &quot;@context&quot;: &quot;https://schema.org&quot;,
+    &quot;@type&quot;: &quot;WebSite&quot;,
+    &quot;name&quot;: &quot;LigTV İzlesene - Selçuksports&quot;,
+    &quot;url&quot;: &quot;http://www.ligtvizlesene56.one/&quot;,
+    &quot;description&quot;: &quot;Selçuksports izle, Taraftarium24, Trgoals, Trgool, Justin TV izle, İnat TV izle, Canlı maç izle, bedava maç yayını.&quot;,
+    &quot;inLanguage&quot;: &quot;tr-TR&quot;,
+    &quot;potentialAction&quot;: {
+      &quot;@type&quot;: &quot;SearchAction&quot;,
+      &quot;target&quot;: {
+        &quot;@type&quot;: &quot;EntryPoint&quot;,
+        &quot;urlTemplate&quot;: &quot;http://www.ligtvizlesene56.one/search?q={search_term_string}&quot;
+      },
+      &quot;query-input&quot;: &quot;required name=search_term_string&quot;
+    }
+  }
+  </script>
+
+  <!-- Organization Schema -->
+  <script type='application/ld+json'>
+  {
+    &quot;@context&quot;: &quot;https://schema.org&quot;,
+    &quot;@type&quot;: &quot;Organization&quot;,
+    &quot;name&quot;: &quot;LigTV İzlesene&quot;,
+    &quot;url&quot;: &quot;http://www.ligtvizlesene56.one/&quot;,
+    &quot;logo&quot;: {
+      &quot;@type&quot;: &quot;ImageObject&quot;,
+      &quot;url&quot;: &quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipdbAtHRmfNR57Vji-6A3E_i6jVIj7byHfaLdcQt49j7EDCX1y1slQARxM6Pk-Od4pins2MONdVNzKsHa7v7UtCRUHyRBje1ImrJUN1CotJqlyFGUt4EEirCcVqT_Ji-w0AGM0OjzN6fg/s1600/ligtvizlesene5.png&quot;
+    },
+    &quot;sameAs&quot;: [
+      &quot;https://twitter.com/NazifSpor&quot;,
+      &quot;https://t.me/ligtvizlesene1&quot;
+    ]
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema (dinamik - yazı sayfaları için) -->
+  <b:if cond='data:blog.pageType == &quot;item&quot;'>
+    <b:loop values='data:posts' var='post'>
+      <script type='application/ld+json'>
+      {
+        &quot;@context&quot;: &quot;https://schema.org&quot;,
+        &quot;@type&quot;: &quot;BreadcrumbList&quot;,
+        &quot;itemListElement&quot;: [
+          {
+            &quot;@type&quot;: &quot;ListItem&quot;,
+            &quot;position&quot;: 1,
+            &quot;name&quot;: &quot;Anasayfa&quot;,
+            &quot;item&quot;: &quot;<data:blog.homepageUrl/>&quot;
+          },
+          {
+            &quot;@type&quot;: &quot;ListItem&quot;,
+            &quot;position&quot;: 2,
+            &quot;name&quot;: &quot;<data:post.title/>&quot;,
+            &quot;item&quot;: &quot;<data:post.url.canonical/>&quot;
+          }
+        ]
+      }
+      </script>
+
+      <!-- Article Schema -->
+      <script type='application/ld+json'>
+      {
+        &quot;@context&quot;: &quot;https://schema.org&quot;,
+        &quot;@type&quot;: &quot;NewsArticle&quot;,
+        &quot;headline&quot;: &quot;<data:post.title/>&quot;,
+        &quot;description&quot;: &quot;<data:post.snippet/>&quot;,
+        &quot;url&quot;: &quot;<data:post.url.canonical/>&quot;,
+        &quot;datePublished&quot;: &quot;<data:post.timestampISO8601/>&quot;,
+        &quot;dateModified&quot;: &quot;<data:post.timestampISO8601/>&quot;,
+        &quot;author&quot;: {
+          &quot;@type&quot;: &quot;Person&quot;,
+          &quot;name&quot;: &quot;<data:post.author/>&quot;
+        },
+        &quot;publisher&quot;: {
+          &quot;@type&quot;: &quot;Organization&quot;,
+          &quot;name&quot;: &quot;LigTV İzlesene&quot;,
+          &quot;logo&quot;: {
+            &quot;@type&quot;: &quot;ImageObject&quot;,
+            &quot;url&quot;: &quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipdbAtHRmfNR57Vji-6A3E_i6jVIj7byHfaLdcQt49j7EDCX1y1slQARxM6Pk-Od4pins2MONdVNzKsHa7v7UtCRUHyRBje1ImrJUN1CotJqlyFGUt4EEirCcVqT_Ji-w0AGM0OjzN6fg/s1600/ligtvizlesene5.png&quot;
+          }
+        },
+        &quot;mainEntityOfPage&quot;: {
+          &quot;@type&quot;: &quot;WebPage&quot;,
+          &quot;@id&quot;: &quot;<data:post.url.canonical/>&quot;
+        }
+      }
+      </script>
+    </b:loop>
+  </b:if>
+
+  <!-- ===== VERIFICATION TAGS ===== -->
+  <meta content='6a695e9e24c958af' name='yandex-verification'/>
+  <meta content='1a0a08b39da5620e' name='yandex-verification'/>
+  <meta content='58a43d56da5b67f4' name='yandex-verification'/>
+  <meta content='4EC98A8B77821230F995D6F6FC0124CB' name='msvalidate.01'/>
+  <meta content='CD1AF34C3D1B24D5C0F64C58113D6C66' name='msvalidate.01'/>
+
+  <!-- ===== PERFORMANCE / PRECONNECT ===== -->
+  <link href='https://fonts.googleapis.com' rel='preconnect'/>
+  <link crossorigin='' href='https://fonts.gstatic.com' rel='preconnect'/>
+  <link href='https://www.google-analytics.com' rel='preconnect'/>
+  <link href='https://www.googletagmanager.com' rel='preconnect'/>
+
+  <!-- RSS Feed -->
+  <link expr:href='data:blog.url + &quot;feeds/posts/default?alt=rss&quot;' rel='alternate' title='RSS' type='application/rss+xml'/>
+
+<b:skin><![CDATA[
+/* =============================================
+   LigTV İzlesene - Modern Dark Sports Theme
+   ============================================= */
+
+/* === CSS VARIABLES === */
+:root {
+  --primary: #e8001a;
+  --primary-dark: #b5001a;
+  --accent: #ff4d00;
+  --bg-deep: #0a0d12;
+  --bg-card: #111722;
+  --bg-elevated: #161d2b;
+  --bg-border: #1e2840;
+  --text-primary: #edf0f7;
+  --text-secondary: #8b9ab5;
+  --text-muted: #4a5568;
+  --live-red: #ff0028;
+  --gold: #ffc300;
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-body: 'Barlow', sans-serif;
+  --radius: 8px;
+  --radius-sm: 4px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.4);
+  --shadow-card: 0 2px 16px rgba(0,0,0,0.5);
+  --glow-primary: 0 0 20px rgba(232,0,26,0.3);
+}
+
+/* === RESET === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--primary); text-decoration: none; transition: all 0.2s ease; }
+a:visited { color: var(--primary); }
+a:hover { color: #ff3355; }
+ul, ol { list-style: none; }
+h1,h2,h3,h4,h5,h6 { font-family: var(--font-display); font-weight: 700; line-height: 1.2; color: var(--text-primary); }
+.section, .widget { margin: 0; padding: 0; }
+.quickedit { display: none !important; }
+.clear { clear: both; }
+.post-feeds, .feed-links { display: none; }
+#layout ul { display: none; }
+hr { border: none; border-top: 1px solid var(--bg-border); margin: 20px 0; }
+
+/* === PRELOADER === */
+#preloader {
+  position: fixed; inset: 0; z-index: 9999;
+  background: var(--bg-deep);
+  display: flex; align-items: center; justify-content: center;
+}
+.preload-inner {
+  display: flex; flex-direction: column; align-items: center; gap: 20px;
+}
+.preload-logo {
+  font-family: var(--font-display);
+  font-size: 2.5rem; font-weight: 800; letter-spacing: 2px;
+  color: var(--primary);
+  animation: pulse-logo 1s ease-in-out infinite alternate;
+}
+@keyframes pulse-logo {
+  from { opacity: 1; text-shadow: 0 0 30px rgba(232,0,26,0.8); }
+  to { opacity: 0.5; text-shadow: none; }
+}
+.preload-bar {
+  width: 200px; height: 3px; background: var(--bg-border); border-radius: 2px; overflow: hidden;
+}
+.preload-bar::after {
+  content: ''; display: block; width: 60%; height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  animation: loading-bar 1.2s ease-in-out infinite;
+}
+@keyframes loading-bar {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(250%); }
+}
+
+/* === 404 ERROR === */
+#error404 {
+  position: fixed; inset: 0; z-index: 9999;
+  background: var(--bg-deep);
+  display: flex; align-items: center; justify-content: center;
+  text-align: center;
+}
+#error-text { padding: 40px; }
+#error-text span {
+  display: block; font-family: var(--font-display);
+  font-size: clamp(6rem, 20vw, 12rem); font-weight: 800;
+  color: var(--primary); line-height: 1;
+  text-shadow: var(--glow-primary);
+}
+#error-text h2 { font-size: 2rem; margin: 10px 0 20px; color: var(--text-secondary); }
+#error-text a {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--primary); color: #fff;
+  padding: 12px 28px; border-radius: var(--radius);
+  font-family: var(--font-display); font-size: 1.1rem; font-weight: 700;
+  letter-spacing: 1px; text-transform: uppercase;
+  transition: all 0.3s; box-shadow: var(--glow-primary);
+}
+#error-text a:hover { background: var(--primary-dark); transform: translateY(-2px); }
+
+/* === LAYOUT WRAPPER === */
+#outer-wrapper { max-width: 1080px; margin: 0 auto; padding: 0 16px; overflow: visible; }
+
+/* Anasayfa: içerik + sidebar yan yana */
+.bwrapsite-content { display: flex; gap: 24px; align-items: flex-start; }
+.content-area { flex: 1; min-width: 0; }
+#sidebar-wrapper { width: 300px; flex-shrink: 0; }
+.sidebar-area { width: 300px; }
+
+/* Makale ve kanal sayfaları: içerik TAM GENİŞLİK, sidebar alta */
+body.item-page .bwrapsite-content,
+body.static_page .bwrapsite-content {
+  display: grid !important;
+  grid-template-columns: 1fr 280px !important;
+  gap: 24px !important;
+}
+body.item-page .content-area,
+body.static_page .content-area {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+/* Tablet: sidebar alta al */
+@media (max-width: 960px) {
+  .bwrapsite-content { flex-direction: column !important; }
+  #sidebar-wrapper { width: 100% !important; }
+  .sidebar-area { width: 100% !important; }
+  body.item-page .bwrapsite-content,
+  body.static_page .bwrapsite-content {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* === PLAYER İFRAME - Kanal sayfaları === */
+body.static_page .post-body iframe,
+body.static_page .post-body embed {
+  width: 100% !important;
+  height: 540px !important;
+  display: block !important;
+  border: none !important;
+}
+@media (max-width: 900px) { body.static_page .post-body iframe { height: 380px !important; } }
+@media (max-width: 600px) { body.static_page .post-body iframe { height: 250px !important; } }
+@media (max-width: 400px) { body.static_page .post-body iframe { height: 200px !important; } }
+
+/* === TOP HEADER / NAVBAR === */
+.site-navbar {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--bg-border);
+  position: sticky; top: 0; z-index: 500;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.6);
+}
+.navbar-inner {
+  max-width: 1080px; margin: 0 auto; padding: 0 16px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+}
+#logo {
+  display: flex; align-items: center;
+  font-family: var(--font-display); font-size: 1.6rem; font-weight: 800;
+  color: var(--text-primary); letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#logo img { max-height: 48px; width: auto; }
+#logo .Header { display: flex; align-items: center; }
+#logo .Header h1 { font-size: 1.5rem; color: var(--text-primary); margin: 0; }
+#logo .Header h1 a { color: var(--text-primary); }
+#logo .description { display: none; }
+.logo-badge {
+  display: inline-block; background: var(--primary);
+  color: #fff; font-size: 0.6rem; font-weight: 800; letter-spacing: 2px;
+  padding: 2px 6px; border-radius: 3px; margin-left: 8px;
+  text-transform: uppercase; vertical-align: middle;
+}
+
+/* === MAIN NAV === */
+#main-nav { display: flex; align-items: center; }
+#main-nav .menu { display: flex; gap: 4px; }
+#main-nav li { position: relative; }
+#main-nav > .menu > li > a {
+  display: flex; align-items: center; gap: 6px;
+  padding: 8px 14px; border-radius: var(--radius-sm);
+  color: var(--text-secondary); font-family: var(--font-display);
+  font-size: 0.85rem; font-weight: 600; letter-spacing: 0.8px;
+  text-transform: uppercase; white-space: nowrap;
+  transition: all 0.2s;
+}
+#main-nav > .menu > li > a:hover,
+#main-nav .current-menu-item > a {
+  color: var(--text-primary);
+  background: rgba(232,0,26,0.12);
+}
+#main-nav .current-menu-item > a { color: var(--primary); }
+
+/* Dropdown */
+#main-nav ul li ul {
+  display: none; position: absolute; top: 100%; left: 0;
+  background: var(--bg-card); border: 1px solid var(--bg-border);
+  border-radius: var(--radius); min-width: 200px;
+  box-shadow: var(--shadow); z-index: 200;
+}
+#main-nav ul li:hover > ul { display: block; }
+#main-nav ul li ul li a {
+  display: block; padding: 10px 16px;
+  color: var(--text-secondary); font-size: 0.85rem; font-weight: 500;
+}
+#main-nav ul li ul li a:hover { color: var(--primary); background: rgba(232,0,26,0.08); }
+
+/* Search */
+#search-bar { position: relative; }
+input#sq {
+  background: var(--bg-elevated); color: var(--text-primary);
+  border: 1px solid var(--bg-border); border-radius: 30px;
+  padding: 8px 40px 8px 16px; font-size: 0.85rem;
+  font-family: var(--font-body); width: 200px;
+  transition: all 0.2s; outline: none;
+}
+input#sq:focus { border-color: var(--primary); width: 240px; background: var(--bg-card); }
+input#sq::placeholder { color: var(--text-muted); }
+#searchsubmit { display: none; }
+.search-form-icon { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 14px; }
+
+/* Mobile nav */
+#menu-icon {
+  display: none; width: 36px; height: 28px; cursor: pointer;
+  flex-direction: column; justify-content: space-between; padding: 3px 0;
+}
+#menu-icon span { display: block; height: 2px; background: var(--text-primary); border-radius: 2px; transition: all 0.3s; }
+
+/* === AD SLOT / TOP CHANNEL SECTION === */
+#adpost2 { margin: 20px 0; }
+#header-ad { width: 100%; }
+
+/* === CHANNEL LIST (Live Channels Section) === */
+.channels { margin-bottom: 20px; }
+.channels .title {
+  font-family: var(--font-display); font-size: 1.2rem; font-weight: 800;
+  letter-spacing: 2px; text-transform: uppercase; color: var(--text-primary);
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 12px; padding: 0;
+}
+.channels .title::before {
+  content: ''; display: inline-block; width: 4px; height: 20px;
+  background: var(--primary); border-radius: 2px;
+}
+.channels .channel-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+  background: transparent !important;
+  padding: 0 !important;
+}
+.channels .channel-list li {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--bg-border);
+  border-radius: var(--radius);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 14px !important;
+  transition: all 0.25s;
+  margin: 0 !important;
+}
+.channels .channel-list li:hover {
+  border-color: var(--primary);
+  background: var(--bg-elevated) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(232,0,26,0.2);
+}
+.channels .channel-list__left { display: flex; align-items: center; }
+.channels .channel-list__left a img {
+  width: 80px !important; height: auto; max-width: 80px !important;
+  opacity: 0.85; filter: brightness(1.1); object-fit: contain;
+}
+.channels .channel-list__left a { min-height: auto !important; line-height: normal !important; }
+
+/* Live Button */
+.btn.btn-secondary {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(232,0,26,0.15) !important;
+  border: 1px solid var(--primary) !important;
+  color: var(--primary) !important;
+  font-family: var(--font-display); font-size: 0.75rem;
+  font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+  padding: 6px 12px; border-radius: 4px;
+  white-space: nowrap; transition: all 0.2s;
+}
+.btn.btn-secondary:hover {
+  background: var(--primary) !important;
+  color: #fff !important;
+  box-shadow: var(--glow-primary);
+}
+.live-badge__icon {
+  display: inline-block; width: 7px; height: 7px;
+  background: var(--live-red); border-radius: 50%;
+  animation: live-pulse 1.5s ease-in-out infinite;
+  flex-shrink: 0;
+}
+@keyframes live-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(255,0,40,0.7); }
+  50% { opacity: 0.7; box-shadow: 0 0 0 4px rgba(255,0,40,0); }
+}
+
+/* === MATCH SCHEDULE (Yayın Akışı) === */
+.matches { margin-bottom: 20px; }
+.matches ul { margin: 0 !important; padding: 0 !important; display: flex; flex-direction: column; gap: 4px; }
+.matches ul li {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--bg-border) !important;
+  border-radius: var(--radius) !important;
+  overflow: hidden; transition: all 0.25s; margin: 0 !important;
+}
+.matches ul li:hover { border-color: rgba(232,0,26,0.4) !important; background: var(--bg-elevated) !important; }
+.matches-top {
+  background: linear-gradient(90deg, var(--primary), #940010) !important;
+  color: #fff !important; padding: 10px 16px !important;
+  border-radius: var(--radius) !important;
+  font-family: var(--font-display) !important; font-size: 0.85rem !important;
+  font-weight: 700 !important; letter-spacing: 1.5px; text-transform: uppercase;
+  display: flex; align-items: center;
+  margin-bottom: 0 !important;
+}
+.matches-top span { color: var(--gold) !important; }
+.m-col {
+  display: flex; align-items: center; padding: 12px 16px;
+  cursor: pointer; gap: 12px;
+}
+.m-col span:nth-child(1) {
+  background: var(--primary) !important;
+  color: #fff !important; font-family: var(--font-display);
+  font-size: 1rem !important; font-weight: 800;
+  padding: 4px 12px !important; border-radius: var(--radius-sm) !important;
+  white-space: nowrap; flex-shrink: 0; float: none !important;
+  width: auto !important; height: auto !important;
+}
+.m-col p2:nth-child(2) {
+  flex: 1; font-weight: 500; color: var(--text-primary) !important;
+  font-size: 0.95rem !important; float: none !important;
+  width: auto !important; height: auto !important;
+  padding: 0 !important; margin: 0 !important;
+}
+.m-col span:nth-child(3) {
+  float: none !important; margin: 0 !important; margin-left: auto !important;
+  width: 22px !important; height: 22px !important;
+  border: 1px solid var(--bg-border) !important; border-radius: 50% !important;
+  color: var(--text-muted) !important; display: flex !important;
+  align-items: center; justify-content: center; flex-shrink: 0;
+  transition: all 0.2s;
+}
+.m-col span:nth-child(4) {
+  float: none !important; padding: 0 !important;
+  font-family: var(--font-display); font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 1px; text-transform: uppercase;
+  color: var(--text-muted) !important;
+  background: var(--bg-elevated); border: 1px solid var(--bg-border);
+  border-radius: var(--radius-sm); padding: 3px 8px !important;
+  flex-shrink: 0;
+}
+.m-col-open {
+  display: none;
+  padding: 12px 16px; border-top: 1px solid var(--bg-border);
+  background: var(--bg-elevated);
+  flex-wrap: wrap; gap: 8px;
+}
+.m-col-open a {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(232,0,26,0.1); border: 1px solid rgba(232,0,26,0.3) !important;
+  color: var(--primary) !important; border-radius: var(--radius-sm);
+  padding: 6px 14px !important; font-size: 0.8rem; font-weight: 600;
+  transition: all 0.2s; margin: 0 !important;
+}
+.m-col-open a:hover { background: var(--primary) !important; color: #fff !important; }
+
+/* === POSTS GRID === */
+.blog-posts { overflow: hidden; }
+.post-outer {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--bg-border) !important;
+  border-radius: var(--radius) !important;
+  overflow: hidden; transition: all 0.3s;
+  display: inline-block;
+  margin-right: 3% !important; margin-bottom: 20px !important;
+  float: left !important; height: auto !important;
+  box-shadow: var(--shadow-card);
+  vertical-align: top;
+}
+.post-outer:hover {
+  border-color: rgba(232,0,26,0.4) !important;
+  transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+}
+.odd { margin-right: 0 !important; }
+.post { height: inherit; }
+
+/* Post Image */
+.post-image {
+  width: 100%; overflow: hidden; background: var(--bg-elevated);
+  aspect-ratio: 16/9; position: relative;
+}
+.post-image img {
+  width: 100% !important; height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.5s ease;
+}
+.post-outer:hover .post-image img { transform: scale(1.06); }
+
+/* Label Badge */
+.label-info { padding: 10px 12px 0; }
+.label-info a {
+  display: inline-block; background: rgba(232,0,26,0.15);
+  border: 1px solid rgba(232,0,26,0.3); color: var(--primary) !important;
+  font-size: 0.65rem; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase; padding: 3px 8px;
+  border-radius: 3px; bottom: auto !important; margin: 0 !important;
+  box-shadow: none !important;
+}
+.label-info a:nth-child(n+3) { display: none; }
+
+/* Post Data */
+.postdata { padding: 12px; }
+h2.post-title, h1.post-title {
+  font-family: var(--font-display) !important;
+  font-size: 1.05rem !important; font-weight: 700 !important;
+  color: var(--text-primary) !important; line-height: 1.3 !important;
+  margin: 0 !important; max-height: none !important;
+  display: -webkit-box !important; -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important; overflow: hidden !important;
+}
+h2.post-title a, h1.post-title a { color: var(--text-primary) !important; }
+h2.post-title a:hover, h1.post-title a:hover { color: var(--primary) !important; }
+
+/* Post Info Bottom */
+.postdata2 {
+  padding: 8px 12px; border-top: 1px solid var(--bg-border);
+  background: transparent; position: static !important;
+  overflow: hidden; width: auto !important;
+}
+.post-info {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 0.75rem; color: var(--text-muted); font-weight: 500;
+  float: none !important; line-height: normal !important;
+}
+.post-info .fa { color: var(--primary); margin-right: 4px; }
+.post-info a { color: var(--text-muted) !important; }
+.share-item.share { display: none; }
+.readmore2 { display: none; }
+
+/* === SINGLE POST === */
+body .post.hentry {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--bg-border) !important;
+  border-radius: var(--radius) !important;
+}
+h1.post-title {
+  font-size: 2rem !important; padding: 24px !important;
+  -webkit-line-clamp: initial !important; max-height: none !important;
+  border-bottom: 1px solid var(--bg-border); margin-bottom: 0 !important;
+}
+.post-body {
+  color: var(--text-secondary) !important; line-height: 1.7 !important;
+  font-size: 1rem !important; padding: 20px 24px !important;
+}
+.post-info.single-info {
+  padding: 12px 24px; background: var(--bg-elevated);
+  border-top: 1px solid var(--bg-border);
+  border-bottom: 1px solid var(--bg-border);
+  margin-bottom: 0 !important;
+}
+
+/* Share buttons (single post) */
+.sharepost { padding: 20px 24px; border-top: 1px solid var(--bg-border); overflow: hidden; margin: 0; }
+.sharepost ul { display: flex; gap: 8px; justify-content: center; padding: 0; }
+.sharepost li { float: none; margin: 0 !important; width: auto !important; }
+.sharepost li a {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 18px !important; border-radius: var(--radius-sm) !important;
+  font-family: var(--font-display); font-size: 0.8rem; font-weight: 700;
+  letter-spacing: 0.5px; text-transform: uppercase; color: #fff !important;
+}
+.sharepost li a .fa { float: none !important; padding: 0 !important; background: none !important; }
+.sharepost li .twitter { background: #1da1f2 !important; }
+.sharepost li .facebook { background: #1877f2 !important; }
+.sharepost li .linkedin { background: #0a66c2 !important; }
+.sharepost li .pinterest { background: #e60023 !important; }
+
+/* Breadcrumbs */
+.breadcrumbs {
+  background: var(--bg-card); border: 1px solid var(--bg-border);
+  border-radius: var(--radius); padding: 12px 16px;
+  margin-bottom: 16px; font-size: 0.8rem; color: var(--text-muted);
+  display: flex; align-items: center; flex-wrap: wrap; gap: 6px;
+}
+.breadcrumbs a { color: var(--text-muted); }
+.breadcrumbs a:hover { color: var(--primary); }
+.breadcrumbs span:first-child a { color: var(--primary); }
+.breadcrumbs .fa-angle-right { color: var(--text-muted); font-size: 10px; }
+
+/* Pagination */
+.showpage, .showpageNum, .showpagePoint, .showpageOf {
+  display: inline-block; padding: 8px 14px;
+  background: var(--bg-card); border: 1px solid var(--bg-border);
+  border-radius: var(--radius-sm); color: var(--text-secondary);
+  font-size: 0.8rem; font-weight: 600; margin: 0 3px; transition: all 0.2s;
+}
+.showpagePoint { background: var(--primary) !important; border-color: var(--primary) !important; color: #fff !important; }
+.showpage a:hover, .showpageNum a:hover, .showpagePoint:hover {
+  background: var(--primary) !important; border-color: var(--primary) !important; color: #fff !important;
+}
+#blog-pager { text-align: center; padding: 20px 0; clear: both; }
+
+/* Pager (single post) */
+.pager { padding: 20px 24px; border-top: 1px solid var(--bg-border); overflow: hidden; }
+.pager-left, .pager-right {
+  width: 46% !important; background: var(--bg-elevated);
+  border: 1px solid var(--bg-border); border-radius: var(--radius);
+  padding: 12px 16px; transition: all 0.2s; height: auto !important;
+}
+.pager-left:hover, .pager-right:hover { border-color: var(--primary); }
+.pager-title-left { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--text-primary); display: block; margin-bottom: 4px; }
+.pager-left a, .pager-right a { color: var(--text-muted); font-size: 0.8rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* Related Posts */
+.related-postbwrap { background: transparent !important; }
+.related-postbwrap h4 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 800; color: var(--text-primary); background: var(--bg-elevated) !important; border-color: var(--bg-border) !important; letter-spacing: 1px; text-transform: uppercase; }
+.related-post-style-2 li { background: var(--bg-card); border: 1px solid var(--bg-border) !important; border-radius: var(--radius) !important; box-shadow: none !important; overflow: hidden; transition: all 0.3s; }
+.related-post-style-2 li:hover { border-color: rgba(232,0,26,0.4) !important; transform: translateY(-3px); }
+.related-post-style-2 .related-post-item-title { color: var(--text-primary) !important; font-family: var(--font-display); }
+.related-post-style-2 .related-post-item-summary { color: var(--text-secondary) !important; }
+
+/* Author box */
+.authorboxwrap { background: var(--bg-elevated) !important; border-top: 1px solid var(--bg-border) !important; padding: 24px !important; }
+.author_description_container h4 { color: var(--text-primary) !important; }
+.author_description_container h4 span { color: var(--primary) !important; }
+.author_description_container p { color: var(--text-secondary) !important; }
+.avatar-container { border: 2px solid var(--primary) !important; border-radius: 50% !important; box-shadow: var(--glow-primary); }
+.social-links i { background: var(--bg-card) !important; color: var(--text-secondary) !important; border: 1px solid var(--bg-border); transition: all 0.2s; }
+.social-links i:hover { background: var(--primary) !important; color: #fff !important; border-color: var(--primary); }
+
+/* Comments */
+#comments { background: var(--bg-card) !important; border: 1px solid var(--bg-border) !important; border-radius: var(--radius); margin-bottom: 20px; }
+#comments h4 { background: var(--bg-elevated) !important; color: var(--text-primary) !important; border-bottom: 1px solid var(--bg-border) !important; }
+.comment-block { border-bottom: 1px solid var(--bg-border) !important; }
+.comments .comments-content .comment-header { background: var(--bg-elevated) !important; border-color: var(--bg-border) !important; }
+.comments .comments-content .comment-content { background: var(--bg-card) !important; border-color: var(--bg-border) !important; color: var(--text-secondary) !important; }
+.comment-actions a { background: var(--bg-elevated) !important; border-color: var(--bg-border) !important; color: var(--primary) !important; }
+.comment-actions a:hover { background: var(--primary) !important; color: #fff !important; }
+
+/* === SIDEBAR === */
+#sidebar { background: transparent !important; }
+#sidebar .widget {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--bg-border) !important;
+  border-top: 2px solid var(--primary) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow-card) !important;
+  margin-bottom: 20px !important; overflow: hidden;
+}
+#sidebar .widget h2 {
+  font-family: var(--font-display) !important;
+  font-size: 0.8rem !important; font-weight: 800 !important;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: var(--text-secondary) !important;
+  background: var(--bg-elevated) !important;
+  border-bottom: 1px solid var(--bg-border) !important;
+  padding: 12px 16px !important; margin: 0 !important;
+  box-shadow: none !important;
+}
+#sidebar .widget-content { padding: 14px !important; }
+
+/* Popular Posts Sidebar */
+.PopularPosts ul li {
+  background: transparent !important; border-bottom: 1px solid var(--bg-border) !important;
+  padding: 10px 0 !important; margin: 0 !important;
+}
+.PopularPosts ul li:last-child { border-bottom: none !important; }
+.PopularPosts ul li img { border-radius: var(--radius-sm); object-fit: cover; }
+.PopularPosts ul li .item-title a, .PopularPosts ul li a {
+  color: var(--text-secondary) !important; font-size: 0.85rem !important;
+  font-family: var(--font-body); font-weight: 500 !important;
+}
+.PopularPosts ul li .item-title a:hover, .PopularPosts ul li a:hover { color: var(--primary) !important; }
+
+/* Label Cloud */
+.cloud-label-widget-content .label-size a {
+  background: var(--bg-elevated) !important; color: var(--text-secondary) !important;
+  border: 1px solid var(--bg-border); font-size: 0.75rem !important;
+  padding: 6px 10px !important; border-radius: var(--radius-sm) !important;
+  transition: all 0.2s;
+}
+.cloud-label-widget-content .label-size:hover a {
+  background: var(--primary) !important; color: #fff !important; border-color: var(--primary);
+}
+
+/* Archive widget */
+#ArchiveList a.post-count-link { color: var(--text-secondary) !important; font-size: 0.85rem; }
+#ArchiveList a.post-count-link:hover { color: var(--primary) !important; }
+#ArchiveList select {
+  width: 100%; padding: 10px; border: 1px solid var(--bg-border);
+  background: var(--bg-elevated); color: var(--text-primary);
+  border-radius: var(--radius-sm); font-size: 0.85rem;
+}
+
+/* === FEATURED SECTION (Homepage Label Posts) === */
+.featured-area { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+.mag-wrapper { background: transparent !important; }
+#recent1 { width: 100%; }
+#recent1 .title {
+  font-family: var(--font-display) !important; font-size: 0.8rem !important;
+  font-weight: 800 !important; letter-spacing: 2px; text-transform: uppercase !important;
+  background: var(--primary) !important; color: #fff !important;
+  padding: 10px 20px !important; border-radius: var(--radius-sm) !important;
+  box-shadow: var(--glow-primary) !important; margin: 24px 0 16px !important;
+  display: inline-block !important;
+}
+#recent1 .recent-box {
+  width: 31.5% !important; background: var(--bg-card) !important;
+  border: 1px solid var(--bg-border) !important; border-radius: var(--radius) !important;
+  box-shadow: var(--shadow-card) !important; overflow: hidden;
+  transition: all 0.3s; margin-right: 2.5% !important; margin-bottom: 16px !important;
+}
+#recent1 .recent-box:hover { border-color: rgba(232,0,26,0.4) !important; transform: translateY(-4px); }
+#recent1 li.recent-box:nth-child(3), #recent1 li.recent-box:nth-child(6) { margin-right: 0 !important; }
+#recent1 .recent-box .imageContainer { width: 100% !important; height: 180px !important; background: var(--bg-elevated) !important; }
+.label_thumb { height: 180px !important; }
+#recent1 .label_title {
+  color: var(--text-primary) !important; font-family: var(--font-display) !important;
+  font-size: 0.95rem !important; font-weight: 700 !important; padding: 12px 12px 0 !important;
+}
+#recent1 .label_title:hover { color: var(--primary) !important; }
+.post-date { color: var(--text-muted) !important; }
+.recent-com { color: var(--text-muted) !important; }
+
+/* === FOOTER === */
+#footer-wrapper {
+  background: var(--bg-card) !important; margin-top: 40px;
+  border-top: 1px solid var(--bg-border);
+}
+.footer-bottom { padding: 32px 16px !important; }
+#footer-wrapper h2 { color: var(--text-primary) !important; font-family: var(--font-display) !important; font-size: 1rem !important; font-weight: 800 !important; letter-spacing: 1px; text-transform: uppercase; }
+#footer-wrapper .widget-content { color: var(--text-muted) !important; font-size: 0.9rem !important; text-align: left !important; }
+#footer-wrapper .widget li { background: var(--bg-elevated) !important; border: 1px solid var(--bg-border) !important; border-radius: var(--radius-sm) !important; padding: 8px 14px !important; margin: 0 6px 6px 0 !important; display: inline-block !important; }
+.footer li a { color: var(--text-secondary) !important; font-size: 0.85rem !important; }
+.footer li a:hover { color: var(--primary) !important; }
+.textwidget { color: var(--text-secondary) !important; line-height: 1.7; font-size: 0.9rem; }
+.textwidget b { color: var(--primary); font-weight: 600; }
+#footerfix { background: var(--bg-deep) !important; border-top: 1px solid var(--bg-border); }
+.copyleft { color: var(--text-muted) !important; font-size: 0.8rem !important; padding: 14px !important; }
+.copyleft a { color: var(--primary) !important; }
+
+/* === SCROLL TO TOP === */
+.smoothscroll-top {
+  position: fixed; bottom: -60px; right: 24px; z-index: 999;
+  width: 44px; height: 44px; background: var(--primary);
+  color: #fff; border-radius: var(--radius); border: none;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; cursor: pointer; box-shadow: var(--glow-primary);
+  transition: all 0.4s ease; opacity: 0; visibility: hidden;
+}
+.smoothscroll-top.show { bottom: 24px; opacity: 1; visibility: visible; }
+.smoothscroll-top:hover { background: var(--primary-dark); transform: translateY(-3px); }
+
+/* === BLOCKQUOTE === */
+blockquote {
+  border-left: 4px solid var(--primary) !important;
+  background: var(--bg-elevated); color: var(--text-secondary) !important;
+  padding: 16px 20px !important; border-radius: 0 var(--radius) var(--radius) 0 !important;
+  box-shadow: none !important;
+}
+
+/* === SUBSCRIBE / EMAIL === */
+#wp-subscribe { background: var(--bg-elevated) !important; border-radius: var(--radius); padding: 20px !important; }
+#wp-subscribe h4.title { color: var(--primary) !important; }
+#wp-subscribe input.email-field { background: var(--bg-card) !important; color: var(--text-primary) !important; border-color: var(--bg-border) !important; box-shadow: none !important; }
+#wp-subscribe input.submit { background: var(--primary) !important; }
+
+/* === ANIMATIONS === */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animated.fadeInUp, .animated.fadeInUpBig { animation: fadeInUp 0.5s ease forwards; }
+.fade-in { opacity: 0; animation: fadeInUp ease-in 1; animation-fill-mode: forwards; animation-duration: 0.8s; }
+.fade-in.one { animation-delay: 0.3s; }
+.fade-in.two { animation-delay: 0.6s; }
+.fade-in.three { animation-delay: 0.9s; }
+
+/* === RESPONSIVE === */
+@media (max-width: 960px) {
+  .bwrapsite-content { flex-direction: column; }
+  .sidebar-area { width: 100% !important; }
+  .content-area { width: 100% !important; }
+  .navbar-inner { flex-wrap: wrap; height: auto; padding: 12px 16px; gap: 10px; }
+  #main-nav { width: 100%; display: none; }
+  #main-nav.open { display: flex; flex-direction: column; }
+  #main-nav .menu { flex-direction: column; width: 100%; }
+  #main-nav > .menu > li > a { width: 100%; }
+  #menu-icon { display: flex; }
+  input#sq { width: 100%; }
+  #search-bar { width: 100%; }
+}
+@media (max-width: 768px) {
+  .post-outer { width: 100% !important; margin-right: 0 !important; }
+  .channels .channel-list { grid-template-columns: repeat(2, 1fr); }
+  #recent1 .recent-box { width: 48% !important; margin-right: 2% !important; }
+  h1.post-title { font-size: 1.4rem !important; }
+  .pager-left, .pager-right { width: 100% !important; margin-bottom: 10px; }
+  .sharepost li { width: 45% !important; margin-bottom: 8px; }
+}
+@media (max-width: 480px) {
+  .channels .channel-list { grid-template-columns: 1fr; }
+  #recent1 .recent-box { width: 100% !important; margin-right: 0 !important; }
+  .smoothscroll-top { right: 12px; bottom: 12px; }
+  .sharepost li { width: 100% !important; }
+  .m-col { flex-wrap: wrap; gap: 8px; }
+}
+]]></b:skin>
+
+<b:template-skin>
+body#layout div.section {background-color:transparent;border:0;font-family:sans-serif;margin:0;overflow:visible;padding:10px;position:relative}
+body#layout .draggable-widget .widget-wrap2 {background: #e8001a;}
+body#layout .add_widget {background-color:#e8001a;border: 1px dashed #333!important;}
+body#layout .add_widget a {color: white}
+body#layout .editlink {color: #fff !important; background-color: #e8001a; padding: 0px 20px; border-radius: 50px;}
+</b:template-skin>
+
+<style type='text/css'>
+/* Additional inline overrides */
+.PopularPosts ul li img { border-radius: 4px; }
+.PopularPosts ul { padding: 0 !important; }
+#main-nav ul { margin: 0; }
+ul#label_with_thumbs { overflow: hidden; background: transparent; }
+.post-summary { display: none; }
+.viewall a { color: var(--text-muted, #4a5568); }
+.Label li { padding: 6px 0 !important; border-bottom: 1px solid #1e2840; display: flex !important; align-items: center; }
+.Label li:before { display: none !important; }
+.Label li a { color: #8b9ab5 !important; font-size: 0.85rem; }
+.Label li span { background: #e8001a; color: #fff; border-radius: 4px; padding: 2px 6px; font-size: 0.7rem; position: static; right: auto; }
+.social-links li { list-style: none !important; }
+.social-links a:before, .social-links a:after { content: none !important; }
+
+/* =============================================
+   KANAL SAYFASI - PLAYER TAM GENISLIK
+   ============================================= */
+</style>
+
+<!-- Static page full width player fix -->
+<b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+<style type='text/css'>
+
+/* === KANAL SAYFASI: SIDEBAR TAMAMEN GİZLE === */
+#sidebar-wrapper { display: none !important; width: 0 !important; overflow: hidden !important; }
+.sidebar-area    { display: none !important; width: 0 !important; overflow: hidden !important; }
+
+/* === İÇERİK ALANI TAM GENİŞLİK === */
+#bwrapcontent,
+.bwrapsite-content {
+  display: block !important;
+  width: 100% !important;
+}
+
+#primarybwrap,
+.content-area {
+  width: 100% !important;
+  max-width: 100% !important;
+  float: none !important;
+}
+
+/* === POST ARKA PLAN TEMİZLE === */
+.post-outer,
+.post.hentry {
+  width: 100% !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  display: block !important;
+  float: none !important;
+  height: auto !important;
+}
+
+/* === BAŞLIK === */
+h1.post-title {
+  font-size: 1.4rem !important;
+  padding: 14px 16px !important;
+  background: #111722 !important;
+  border-radius: 8px 8px 0 0 !important;
+  border-bottom: 2px solid #e8001a !important;
+  max-height: none !important;
+  -webkit-line-clamp: unset !important;
+  margin: 0 !important;
+}
+
+/* === PLAYER WRAPPER === */
+.post-body {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: #000 !important;
+  width: 100% !important;
+}
+
+/* İframe tam genişlik, 16:9 responsive */
+.post-body iframe,
+.post-body embed,
+.post-body object {
+  display: block !important;
+  width: 100% !important;
+  min-width: 100% !important;
+  border: none !important;
+  background: #000;
+}
+
+/* Sabit yükseklik - masaüstü */
+.post-body iframe { height: 580px !important; }
+
+@media (max-width: 900px)  { .post-body iframe { height: 420px !important; } }
+@media (max-width: 600px)  { .post-body iframe { height: 280px !important; } }
+@media (max-width: 400px)  { .post-body iframe { height: 220px !important; } }
+
+/* Diğer içerik kutuları */
+.postdata, .postdata2, .post-info { display: none !important; }
+
+/* Ad slot alanını da genişlet */
+#adpost2, #adpost { width: 100% !important; }
+
+</style>
+</b:if>
+
+<script src='//code.jquery.com/jquery-1.10.2.min.js' type='text/javascript'/>
+<b:include data='blog' name='google-analytics'/>
+
+<b:if cond='data:blog.pageType != &quot;item&quot;'>
+<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<style>
+.post-outer{ background: var(--bg-card,#111722); margin-bottom: 20px; display: inline-block; width: 48.5%; float: left; margin-right: 3%; overflow: hidden; }
+.odd { margin-right: 0 !important; }
+</style>
+<script type='text/javascript'>
+snippet_count = 120;
+//<![CDATA[
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('A f=["\\K","\\q\\u\\w\\i\\p\\1O\\H","\\o\\C\\n\\q\\j","\\n\\i\\u\\E\\j\\D","\\L","\\o\\I\\x\\o\\j\\t\\q\\u\\E","","\\1j\\y\\q\\u","\\B","\\r\\D\\l\\t\\V\\j","\\1f\\1f\\1f","\\E\\i\\j\\1w\\n\\i\\v\\i\\u\\j\\1A\\Z\\1B\\w","\\K\\w\\q\\X\\B\\r\\n\\l\\o\\o\\F\\k\\o\\u\\q\\C\\C\\i\\j\\o\\k\\L","\\q\\u\\u\\i\\t\\2b\\2n\\1Q\\1U","\\K\\J\\w\\q\\X\\L","\\K\\I\\n\\B\\q\\w\\F\\k\\n\\l\\x\\i\\n\\1m\\1k\\q\\j\\D\\1m\\j\\D\\I\\v\\x\\o\\k\\L","\\1k\\t\\q\\j\\i","\\i\\u\\j\\t\\Z","\\H\\i\\i\\w","\\1G\\j","\\j\\q\\j\\n\\i","\\n\\q\\u\\1l","\\t\\i\\n","\\t\\i\\C\\n\\q\\i\\o","\\j\\Z\\C\\i","\\j\\i\\p\\j\\J\\D\\j\\v\\n","\\D\\t\\i\\H","\\l\\n\\j\\i\\t\\u\\l\\j\\i","\\I\\t\\n","\\v\\i\\w\\q\\l\\1G\\j\\D\\I\\v\\x\\u\\l\\q\\n","\\r\\y\\u\\j\\i\\u\\j","\\K\\q\\v\\E","\\o\\t\\r\\F\\k","\\k","\\o\\I\\x\\o\\j\\t","\\D\\j\\j\\C\\3e\\J\\J\\W\\1f\\x\\C\\1f\\x\\n\\y\\E\\o\\C\\y\\j\\1f\\r\\y\\v\\J\\1p\\1E\\2d\\1L\\1e\\1d\\1b\\1u\\1I\\Z\\y\\E\\J\\2i\\2j\\y\\C\\y\\2b\\3m\\W\\Y\\2f\\1B\\J\\V\\V\\V\\V\\V\\V\\V\\V\\1w\\1H\\1l\\J\\V\\1B\\Z\\2d\\X\\t\\C\\2o\\1U\\u\\1L\\J\\o\\1s\\O\\Y\\Y\\J\\C\\q\\r\\j\\I\\t\\i\\1m\\u\\y\\j\\1m\\l\\X\\l\\q\\n\\l\\x\\n\\i\\1f\\C\\u\\E","\\C\\I\\x\\n\\q\\o\\D\\i\\w","\\1T\\l\\u","\\1R\\i\\x","\\1Q\\l\\t","\\V\\C\\t","\\1Q\\l\\Z","\\1T\\I\\u\\i","\\1T\\I\\n\\Z","\\V\\I\\E","\\2f\\i\\C\\j","\\1O\\r\\j","\\1W\\y\\X","\\1y\\i\\r","\\K\\n\\q\\B\\r\\n\\l\\o\\o\\F\\k\\t\\i\\r\\i\\u\\j\\1p\\x\\y\\p\\k\\L","\\K\\w\\q\\X\\B\\r\\n\\l\\o\\o\\F\\k\\q\\v\\l\\E\\i\\1d\\y\\u\\j\\l\\q\\u\\i\\t\\k\\L\\K\\l\\B\\D\\t\\i\\H\\F\\k","\\k\\B\\j\\l\\t\\E\\i\\j\\B\\F\\k\\1m\\j\\y\\C\\k\\L\\K\\q\\v\\E\\B\\r\\n\\l\\o\\o\\F\\k\\n\\l\\x\\i\\n\\1m\\j\\D\\I\\v\\x\\k\\B\\o\\t\\r\\F\\k","\\k\\B\\l\\n\\j\\F\\k","\\k\\J\\L\\K\\J\\l\\L\\K\\J\\w\\q\\X\\L","\\K\\l\\B\\r\\n\\l\\o\\o\\F\\k\\n\\l\\x\\i\\n\\1m\\j\\q\\j\\n\\i\\k\\B\\D\\t\\i\\H\\F\\k","\\k\\B\\j\\l\\t\\E\\i\\j\\B\\F\\k\\1m\\j\\y\\C\\k\\L","\\K\\J\\l\\L","\\1p","\\K\\w\\q\\X\\B\\r\\n\\l\\o\\o\\F\\k\\j\\y\\i\\k\\L\\K\\l\\B\\D\\t\\i\\H\\F\\k","\\k\\B\\r\\n\\l\\o\\o\\F\\k\\C\\y\\o\\j\\1p\\w\\l\\j\\i\\k\\L","\\B\\m\\B","\\1s\\B\\1d\\y\\v\\v\\i\\u\\j\\o","\\1s\\B\\1d\\y\\v\\v\\i\\u\\j","\\Y\\B\\1d\\y\\v\\v\\i\\u\\j\\o","\\1W\\y\\B\\1d\\y\\v\\v\\i\\u\\j\\o","\\K\\l\\B\\r\\n\\l\\o\\o\\F\\k\\t\\i\\r\\i\\u\\j\\1p\\r\\y\\v\\k\\B\\D\\t\\i\\H\\F\\k","\\K\\J\\l\\L\\K\\J\\w\\q\\X\\L","\\o\\I\\v\\v\\l\\t\\Z","\\t\\i\\C\\n\\l\\r\\i","\\n\\l\\o\\j\\1B\\u\\w\\i\\p\\1O\\H","\\K\\C\\B\\r\\n\\l\\o\\o\\F\\k\\C\\y\\o\\j\\1p\\o\\I\\v\\v\\l\\t\\Z\\k\\L","\\1f\\1f\\1f\\K\\J\\C\\L","\\K\\J\\l\\L","\\K\\J\\I\\n\\L","\\o\\t\\r","\\o\\1e\\1b\\1p\\r","\\o\\1s\\O\\Y\\Y","\\l\\j\\j\\t","\\1f\\n\\l\\x\\i\\n\\1m\\j\\D\\I\\v\\x","\\t\\i\\l\\w\\Z","\\w\\i\\H\\l\\I\\n\\j\\1f\\1j\\C\\E","\\v\\1u\\w\\i\\H\\l\\I\\n\\j\\1f\\1j\\C\\E","\\1U\\B\\w\\F\\Q\\k\\e\\1Q\\e\\q\\e\\x\\e\\r\\e\\l\\e\\x\\e\\Z\\e\\1l\\e\\y\\e\\1j\\e\\l\\e\\v\\e\\1l\\e\\I\\e\\1j\\e\\1l\\e\\H\\e\\l\\e\\1E\\e\\i\\e\\x\\e\\1A\\e\\C\\e\\n\\e\\D\\e\\i\\e\\H\\e\\q\\e\\j\\e\\V\\e\\1u\\e\\1u\\e\\1W\\e\\1O\\e\\2d\\e\\Z\\e\\3R\\e\\C\\e\\1l\\e\\n\\e\\i\\e\\r\\e\\H\\e\\H\\e\\1A\\e\\C\\e\\1u\\e\\r\\e\\1l\\e\\1u\\e\\r\\e\\1w\\e\\v\\e\\x\\e\\r\\e\\q\\e\\l\\e\\C\\e\\X\\e\\I\\e\\t\\e\\1j\\e\\X\\e\\1l\\e\\1d\\e\\1E\\e\\1l\\e\\I\\e\\r\\e\\1l\\e\\v\\e\\q\\e\\x\\e\\1u\\e\\1A\\e\\C\\e\\v\\e\\l\\e\\l\\e\\o\\e\\H\\e\\j\\e\\t\\e\\t\\e\\y\\e\\y\\e\\y\\e\\1k\\e\\l\\e\\x\\e\\E\\e\\o\\e\\i\\e\\r\\e\\l\\e\\x\\e\\E\\e\\r\\e\\q\\e\\p\\e\\1k\\e\\n\\e\\D\\e\\E\\e\\C\\e\\X\\e\\2b\\e\\x\\e\\E\\e\\o\\e\\i\\e\\r\\e\\l\\e\\x\\e\\1l\\e\\1T\\e\\r\\e\\q\\e\\p\\e\\I\\e\\t\\e\\r\\e\\X\\k\\1g\\k\\e\\v\\e\\l\\e\\E\\e\\i\\k\\1g\\k\\e\\Z\\e\\1j\\e\\H\\e\\o\\e\\i\\e\\r\\e\\1E\\k\\1g\\k\\e\\1j\\e\\u\\e\\i\\e\\1j\\e\\u\\e\\x\\e\\1w\\e\\1d\\e\\i\\e\\H\\e\\n\\e\\p\\k\\1g\\k\\e\\n\\e\\H\\e\\H\\k\\1g\\k\\e\\V\\e\\E\\e\\H\\e\\n\\e\\D\\e\\u\\e\\l\\e\\x\\e\\u\\e\\l\\k\\1g\\k\\e\\i\\e\\x\\e\\u\\e\\3Y\\e\\l\\e\\v\\k\\1g\\k\\e\\V\\e\\E\\e\\H\\e\\n\\e\\D\\e\\u\\e\\l\\e\\x\\e\\u\\e\\l\\e\\j\\e\\2i\\e\\1j\\e\\H\\e\\1j\\e\\1d\\e\\i\\e\\x\\k\\1g\\k\\e\\v\\e\\q\\e\\x\\e\\1u\\k\\1g\\k\\e\\i\\e\\H\\e\\n\\e\\r\\e\\l\\e\\1j\\e\\D\\e\\u\\k\\1g\\k\\e\\v\\e\\l\\e\\l\\e\\o\\e\\H\\e\\j\\e\\t\\e\\t\\e\\y\\e\\y\\e\\y\\e\\1k\\e\\l\\e\\x\\e\\E\\e\\o\\e\\i\\e\\r\\e\\l\\e\\x\\e\\E\\e\\r\\e\\q\\e\\p\\e\\1k\\e\\n\\e\\D\\e\\E\\k\\1g\\k\\e\\q\\e\\x\\e\\r\\e\\Z\\e\\1E\\k\\P\\2m\\1G\\1o\\2o\\1n\\Q\\w\\Q\\2j\\P\\P\\1o\\1y\\1o\\1n\\2e\\1G\\1o\\w\\Q\\1H\\P\\1n\\Q\\w\\Q\\1C\\P\\P\\1o\\w\\Q\\1b\\P\\1g\\w\\Q\\W\\P\\1n\\Q\\w\\Q\\1s\\P\\P\\1o\\w\\Q\\Y\\P\\1n\\2m\\3F\\1o\\1y\\1o\\1n\\2e\\2f\\1o\\3G\\1G\\1o\\w\\Q\\1e\\P\\1n\\Q\\w\\Q\\O\\P\\P\\1n\\2e\\1B\\Q\\w\\Q\\1I\\P\\P\\Q\\w\\Q\\1L\\P\\P\\F\\w\\Q\\1R\\P\\2c\\2c\\1g\\2n\\1n\\2c\\1n","\\m","\\m\\m\\m\\m\\m\\m\\m\\m\\m\\m\\p\\1e\\1C\\m\\p\\O\\1H\\m\\p\\O\\1s\\m\\1m\\Y\\p\\1L\\w\\i\\l\\m\\p\\O\\1d\\m\\p\\1e\\W\\m\\p\\O\\1y\\m\\p\\O\\1R\\m\\p\\1e\\1b\\m\\p\\O\\1I\\m\\p\\1b\\Y\\m\\p\\O\\W\\m\\p\\O\\1L\\m\\p\\O\\1w\\m\\p\\1e\\1e\\m\\p\\1b\\1b\\m\\p\\O\\O\\m\\p\\1b\\1R\\m\\p\\1e\\Y\\m\\p\\W\\V\\m\\p\\W\\1d\\m\\p\\W\\1w\\m\\p\\1b\\1w\\m\\p\\O\\1A\\m\\p\\O\\1C\\m\\p\\1e\\1I\\m\\p\\1b\\W\\m\\p\\W\\1y\\m\\p\\O\\1b\\m\\H\\I\\u\\r\\j\\q\\y\\u\\m\\p\\1b\\1y\\m\\1s\\Y\\m\\w\\y\\r\\I\\v\\i\\u\\j\\m\\p\\1H\\1C\\m\\1k\\q\\u\\w\\y\\1k\\m\\p\\1C\\1y\\m\\p\\W\\1A\\m\\X\\l\\t\\m\\p\\1C\\W\\m\\p\\W\\O\\m\\p\\W\\1I\\m\\p\\W\\1H\\m\\p\\O\\1e\\m\\o\\i\\j\\1B\\u\\j\\i\\t\\X\\l\\n\\m\\q\\H\\m\\W\\Y\\Y\\Y\\m\\p\\1e\\O\\m\\1s\\1s","\\H\\t\\y\\v\\1d\\D\\l\\t\\1d\\y\\w\\i","\\e\\1k\\3c","\\e\\x","\\E","\\K\\q\\v\\E\\B\\1k\\q\\w\\j\\D\\F\\k","\\k\\B\\D\\i\\q\\E\\D\\j\\F\\k","\\k\\B\\o\\t\\r\\F\\k","\\J\\o\\1e\\1b\\1p\\r\\J","\\J\\1k","\\1p\\D","\\1p\\r\\J","\\k\\B\\j\\q\\j\\n\\i\\F\\k","\\k\\J\\L"];1h 2l(z,G){N(-1!=z[f[1]](f[0])){1D(A M=z[f[2]](f[0]),T=0;T<M[f[3]];T++){-1!=M[T][f[1]](f[4])&&(M[T]=M[T][f[5]](M[T][f[1]](f[4])+1,M[T][f[3]]))};z=M[f[7]](f[6])};1D(G=G<z[f[3]]-1?G:z[f[3]]-2;f[8]!=z[f[9]](G-1)&&-1!=z[f[1]](f[8],G);){G++};1r z=z[f[5]](0,G-1),z+f[10]}1h 2S(z){A G=R[f[11]](z),M=2P,T=f[12]+2l(G[f[13]],M)+f[14];G[f[13]]=T}1h 3j(G){R[f[16]](f[15]);1D(A M=0;M<2s;M++){A z=G[f[18]][f[17]][M];A 1z=z[f[20]][f[19]];A T;N(M==G[f[18]][f[17]][f[3]]){2g};1D(A 1t=0;1t<z[f[21]][f[3]];1t++){N(z[f[21]][1t][f[22]]==f[23]&&z[f[21]][1t][f[24]]==f[25]){A 1x=z[f[21]][1t][f[20]];A 2y=z[f[21]][1t][f[26]]};N(z[f[21]][1t][f[22]]==f[27]){T=z[f[21]][1t][f[26]];2g}};A 1K;3L{1K=z[f[29]][f[28]]}3M(h){s=z[f[30]][f[19]];a=s[f[1]](f[31]);b=s[f[1]](f[32],a);c=s[f[1]](f[33],b+5);d=s[f[34]](b+5,c-b-5);N(a!=-1&&b!=-1&&c!=-1&&d!=f[6]){1K=d}1F{1K=f[35]}};A 1i=z[f[36]][f[19]];A 3V=1i[f[5]](0,4);A 3T=1i[f[5]](5,7);A 3U=1i[f[5]](8,10);A 1a=2w 3J;1a[1]=f[37];1a[2]=f[38];1a[3]=f[39];1a[4]=f[40];1a[5]=f[41];1a[6]=f[42];1a[7]=f[43];1a[8]=f[44];1a[9]=f[2h];1a[10]=f[2k];1a[11]=f[2q];1a[12]=f[2H];R[f[16]](f[3I]);N(3x==1S){R[f[16]](f[3y]+T+f[3w]+1K+f[2L]+1z+f[3s])};R[f[16]](f[3t]+T+f[2v]+1z+f[2J]);A 1J=f[6];A 2a=0;R[f[16]](f[6]);1i=z[f[36]][f[19]];A 1V=[1,2,3,4,5,6,7,8,9,10,11,12];A 2G=[f[37],f[38],f[39],f[40],f[41],f[42],f[43],f[44],f[2h],f[2k],f[2q],f[2H]];A 2F=1i[f[2]](f[1Z])[2][f[5]](0,2);A 1M=1i[f[2]](f[1Z])[1];A 2D=1i[f[2]](f[1Z])[0];1D(A 1q=0;1q<1V[f[3]];1q++){N(2u(1M)==1V[1q]){1M=2G[1q];2g}};A 2p=2F+f[8]+1M+f[8]+2D;N(3D==1S){R[f[16]](f[1X]+T+f[3C]+2p+f[2J])};N(3B==1S){N(2a==1){1J=1J+f[3E]};N(1x==f[3H]){1x=f[3A]};N(1x==f[3z]){1x=f[3u]};1J=1J+1x;2a=1;R[f[16]](f[3v]+2y+f[2v]+1x+f[3W])};N(f[30]2I z){A 1c=z[f[30]][f[19]]}1F{N(f[2t]2I z){A 1c=z[f[2t]][f[19]]}1F{A 1c=f[6]}};A 2B=/<\\S[^>]*>/g;1c=1c[f[1v]](2B,f[6]);N(3X==1S){N(1c[f[3]]<2x){R[f[16]](f[6]);R[f[16]](1c);R[f[16]](f[6])}1F{R[f[16]](f[6]);1c=1c[f[5]](0,2x);A 2A=1c[f[3S]](f[8]);1c=1c[f[5]](0,2A);R[f[16]](f[3K]+1c+f[3N])}};R[f[16]](f[3r]);N(M!=2s-1){R[f[16]](f[6])}};R[f[16]](f[3O])}$(R)[f[2C]](1h(){$(f[2K])[f[2M]](f[2N],1h(T,1N){1r 1N[f[1v]](f[3Q],f[3P])})});$(R)[f[2C]](1h(){$(f[2K])[f[2M]](f[2N],1h(T,1N){1r 1N[f[1v]](f[3Z],f[2R])})});2Q(1h(1i,1P,U,1q,G,1Y){G=1h(U){1r(U<1P?f[6]:G(2u(U/1P)))+((U=U%1P)>35?2z[f[2T]](U+29):U.2U(36))};N(!f[6][f[1v]](/^/,2z)){2O(U--){1Y[G(U)]=1q[U]||G(U)};1q=[1h(G){1r 1Y[G]}];G=1h(){1r f[2V]};U=1};2O(U--){N(1q[U]){1i=1i[f[1v]](2w 3q(f[2r]+G(U)+f[2r],f[3k]),1q[U])}};1r 1i}(f[2W],1X,1X,f[3i][f[2]](f[3l]),0,{}));1h 3p(G,M){A z=3o;A 1z=3n;2E=f[3h]+z+f[3g]+1z+f[3a]+G[f[1v]](f[2Z],f[2Y]+z+f[2X]+1z+f[3b])+f[2L]+M[f[1v]](/"/g,f[6])+f[3f]+M[f[1v]](/"/g,f[6])+f[3d];N(M!=f[6]){1r 2E}1F{1r f[6]}}',62,253,'||||||||||||||x5C|_0x60ea|||x65|x74|x22|x61|x7C|x6C|x73|x78|x69|x63||x72|x6E|x6D|x64|x62|x6F|_0x829fx2|var|x20|x70|x68|x67|x3D|_0x829fx3|x66|x75|x2F|x3C|x3E|_0x829fx4|if|x36|x5D|x5B|document||_0x829fx5|_0x829fx20|x41|x33|x76|x30|x79|||||||||||_0x829fx11|x32|_0x829fx1b|x43|x37|x2E|x2C|function|_0x829fxd|x6A|x77|x6B|x5F|x29|x28|x2D|_0x829fx19|return|x31|_0x829fx9|x71|68|x45|_0x829fxa|x44|_0x829fx8|x42|x49|x34|for|x7A|else|x24|x35|x39|_0x829fx12|_0x829fxc|x38|_0x829fx17|_0x829fx1e|x4F|_0x829fx1f|x4D|x46|true|x4A|x4C|_0x829fx14|x4E|58|_0x829fx21|57|||||||||||_0x829fx13|x48|x7D|x50|x7B|x53|break|45|x55|x56|46|removeHtmlTag|x3B|x54|x47|_0x829fx1a|47|87|numposts|67|parseInt|55|new|numchars|_0x829fxb|String|_0x829fx1d|_0x829fx1c|79|_0x829fx18|image_tag|_0x829fx16|_0x829fx15|48|in|56|78|52|77|74|while|snippet_count|eval|81|MS8072889874|85|toString|86|82|94|93|92|||||||||||91|95|x2B|97|x3A|96|90|89|84|labelthumbs|88|83|x59|210|310|bp_thumbnail_resize|RegExp|72|53|54|64|65|51|showpostthumbnails|50|63|62|showcommentnum|59|showpostdate|60|x52|x21|61|49|Array|70|try|catch|71|73|76|75|x4B|69|_0x829fxf|_0x829fx10|_0x829fxe|66|showpostsummary|x51|80|||||'.split('|'),0,{}))
+$(function(){$('.post-outer:odd').addClass('odd');});
+//]]>
+</script>
+</b:if>
+</b:if>
+
+</head>
+
+<body>
+
+<b:if cond='data:blog.pageType != &quot;item&quot;'>
+<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<div id='preloader'>
+  <div class='preload-inner'>
+    <div class='preload-logo'>&#9917; LİG TV</div>
+    <div class='preload-bar'/>
+  </div>
+</div>
+</b:if>
+</b:if>
+
+<b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+<div id='error404'>
+  <div id='error-text'>
+    <span>404</span>
+    <h2>Sayfa Bulunamadı</h2>
+    <a href='/'><i class='fa fa-home'/> Ana Sayfaya Dön</a>
+  </div>
+</div>
+</b:if>
+
+<!-- ====== NAVBAR ====== -->
+<div class='site-navbar'>
+  <div class='navbar-inner'>
+    <div id='logo'>
+      <b:section class='header section' id='header' maxwidgets='1' showaddelement='no'>
+        <b:widget id='Header1' locked='true' title='Taraftarium24 canlı maç izle , bedava maç izle - Sportboss- Jojobet tv- Selcuksports HD - Trgool  (Üstbilgi)' type='Header' version='1'>
+          <b:widget-settings>
+            <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipdbAtHRmfNR57Vji-6A3E_i6jVIj7byHfaLdcQt49j7EDCX1y1slQARxM6Pk-Od4pins2MONdVNzKsHa7v7UtCRUHyRBje1ImrJUN1CotJqlyFGUt4EEirCcVqT_Ji-w0AGM0OjzN6fg/s1600/ligtvizlesene5.png</b:widget-setting>
+            <b:widget-setting name='displayHeight'>267</b:widget-setting>
+            <b:widget-setting name='sectionWidth'>261</b:widget-setting>
+            <b:widget-setting name='useImage'>true</b:widget-setting>
+            <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+            <b:widget-setting name='imagePlacement'>REPLACE</b:widget-setting>
+            <b:widget-setting name='displayWidth'>749</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+            <b:if cond='data:useImage'>
+              <div id='header-inner'>
+                <a expr:href='data:blog.homepageUrl' style='display:block'>
+                  <img expr:alt='data:title' expr:src='data:sourceUrl' style='max-height:48px;width:auto;display:block'/>
+                </a>
+              </div>
+            <b:else/>
+              <div id='header-inner'>
+                <h1 class='title' style='font-family:Barlow Condensed,sans-serif;font-weight:800;font-size:1.5rem;color:#edf0f7'>
+                  <b:if cond='data:blog.url == data:blog.homepageUrl'>
+                    <data:title/>
+                  <b:else/>
+                    <a expr:href='data:blog.homepageUrl' style='color:#edf0f7'><data:title/></a>
+                  </b:if>
+                </h1>
+              </div>
+            </b:if>
+          </b:includable>
+          <b:includable id='description'><div class='descriptionwrapper' style='display:none'><p class='description'><span><data:description/></span></p></div></b:includable>
+          <b:includable id='title'>
+            <b:if cond='data:blog.url == data:blog.homepageUrl'><data:title/><b:else/><a expr:href='data:blog.homepageUrl'><data:title/></a></b:if>
+          </b:includable>
+        </b:widget>
+      </b:section>
+    </div>
+
+    <nav id='main-nav' role='navigation'>
+      <ul class='menu' id='menu-main-nav'>
+        <li class='menu-item current-menu-item'><a href='/'><i class='fa fa-home'/> Anasayfa</a></li>
+        <li class='menu-item'><a href='/p/canli-mac-izle.html'>Canlı Maç</a></li>
+        <li class='menu-item'><a href='/p/trgoals-izle.html'>Trgoals</a></li>
+        <li class='menu-item'><a href='/p/trgool-izle.html'>Trgool</a></li>
+        <li class='menu-item'><a href='/p/taraftarium24-izle.html'>Taraftarium24</a></li>
+      </ul>
+    </nav>
+
+    <div id='menu-icon'>
+      <span/><span/><span/>
+    </div>
+
+    <div class='search-box1' id='search-bar'>
+      <form action='/search' id='search-form' method='get'>
+        <input id='sq' name='q' placeholder='Ara...' type='text' value=''/>
+        <input id='searchsubmit' type='submit' value=''/>
+      </form>
+      <span class='search-form-icon'><i class='fa fa-search'/></span>
+    </div>
+  </div>
+
+  <!-- Mobile search -->
+  <div class='search-box2' style='display:none;padding:8px 16px;border-top:1px solid #1e2840'>
+    <form action='/search' id='search-form2' method='get' style='position:relative;width:100%'>
+      <input id='sq' name='q' placeholder='Ara...' style='width:100%;padding:10px 40px 10px 16px;background:#161d2b;border:1px solid #1e2840;border-radius:8px;color:#edf0f7;font-size:0.9rem;outline:none' type='text' value=''/>
+      <span style='position:absolute;right:14px;top:50%;transform:translateY(-50%);color:#4a5568'><i class='fa fa-search'/></span>
+    </form>
+  </div>
+</div>
+<!-- End Navbar -->
+
+<div id='outer-wrapper'>
+
+  <!-- Ad slot top -->
+  <b:section class='animated fadeInUp' id='adpost2' maxwidgets='1' showaddelement='yes'>
+    <b:widget id='HTML66' locked='true' title='' type='HTML' version='1'>
+      <b:widget-settings>
+        <b:widget-setting name='content'><![CDATA[<style>
+ul{list-style:none;margin-left:0;padding-left:0}
+li{margin-bottom:0}
+.live-badge__icon{display:inline-block;width:7px;height:7px;background:#ff0028;border-radius:50%;animation:live-pulse 1.5s ease-in-out infinite;flex-shrink:0}
+@keyframes live-pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(255,0,40,.7)}50%{opacity:.7;box-shadow:0 0 0 4px rgba(255,0,40,0)}}
+</style>
+<div class="channels" style="margin:20px 0">
+  <h2 class="title" style="font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#edf0f7;display:flex;align-items:center;gap:10px;margin-bottom:12px">
+    <span style="display:inline-block;width:4px;height:20px;background:#e8001a;border-radius:2px;flex-shrink:0"></span>
+    CANLI KANALLAR
+  </h2>
+  <ul class="channel-list">
+    <li>
+      <div class="channel-list__left"><a href="/p/kanal1.html"><img src="https://i.ibb.co/Qf88tyb/bein1.png" alt="Bein Sport 1 izle" style="width:80px;height:auto;opacity:.85"/></a></div>
+      <a href="/p/kanal1.html" class="btn btn-secondary"><span class="live-badge__icon"></span>Canlı İzle</a>
+    </li>
+    <li>
+      <div class="channel-list__left"><a href="/p/kanal4.html"><img src="https://i.ibb.co/0Kgkv6Q/bein2.png" alt="Bein Sport 2 izle" style="width:80px;height:auto;opacity:.85"/></a></div>
+      <a href="/p/kanal4.html" class="btn btn-secondary"><span class="live-badge__icon"></span>Canlı İzle</a>
+    </li>
+    <li>
+      <div class="channel-list__left"><a href="/p/kanal6.html"><img src="https://i.ibb.co/HgqH33X/bein3.png" alt="Bein Sport 3 izle" style="width:80px;height:auto;opacity:.85"/></a></div>
+      <a href="/p/kanal6.html" class="btn btn-secondary"><span class="live-badge__icon"></span>Canlı İzle</a>
+    </li>
+    <li>
+      <div class="channel-list__left"><a href="/p/kanal7.html"><img src="https://i.ibb.co/rFTds78/bein4.png" alt="Bein Sport 4 izle" style="width:80px;height:auto;opacity:.85"/></a></div>
+      <a href="/p/kanal7.html" class="btn btn-secondary"><span class="live-badge__icon"></span>Canlı İzle</a>
+    </li>
+    <li>
+      <div class="channel-list__left"><a href="/p/ssport.html"><img src="https://i.ibb.co/CPvpQgN/ssport.png" alt="S sport izle" style="width:80px;height:auto;opacity:.85"/></a></div>
+      <a href="/p/ssport.html" class="btn btn-secondary"><span class="live-badge__icon"></span>Canlı İzle</a>
+    </li>
+  </ul>
+</div>]]></b:widget-setting>
+      </b:widget-settings>
+      <b:includable id='main'>
+        <div id='header-ad'>
+          <div class='widget-content'><data:content/></div>
+        </div>
+      </b:includable>
+    </b:widget>
+  </b:section>
+
+  <div class='clear'/>
+
+  <div class='bwrapsite-content' id='bwrapcontent'>
+
+    <!-- MAIN CONTENT -->
+    <div class='content-area' id='primarybwrap'>
+      <div class='bwrapsite-main' id='mainbwrap' role='main'>
+        <b:section class='mainblogsec' id='mainblogsec' showaddelement='no'>
+          <b:widget id='Blog1' locked='true' title='Blog Kayıtları' type='Blog' version='1'>
+            <b:widget-settings>
+              <b:widget-setting name='commentLabel'>comments</b:widget-setting>
+              <b:widget-setting name='showShareButtons'>false</b:widget-setting>
+              <b:widget-setting name='authorLabel'>By</b:widget-setting>
+              <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+              <b:widget-setting name='timestampLabel'>at</b:widget-setting>
+              <b:widget-setting name='reactionsLabel'/>
+              <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+              <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+              <b:widget-setting name='showLocation'>false</b:widget-setting>
+              <b:widget-setting name='showTimestamp'>false</b:widget-setting>
+              <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+              <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+              <b:widget-setting name='showDateHeader'>false</b:widget-setting>
+              <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
+              <b:widget-setting name='showCommentLink'>false</b:widget-setting>
+              <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
+              <b:widget-setting name='postLocationLabel'>Location:</b:widget-setting>
+              <b:widget-setting name='showAuthor'>false</b:widget-setting>
+              <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
+              <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+              <b:widget-setting name='showLabels'>false</b:widget-setting>
+              <b:widget-setting name='postLabelsLabel'>Labels:</b:widget-setting>
+              <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+              <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+              <b:widget-setting name='showReactions'>false</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main' var='top'>
+  <b:if cond='data:mobile == &quot;false&quot;'>
+    <div class='blog-posts hfeed'>
+      <b:include data='posts' name='breadcrumb'/>
+      <data:defaultAdStart/>
+      <b:loop values='data:posts' var='post'>
+        <b:if cond='data:post.isDateStart'><b:if cond='data:post.isFirstPost == &quot;false&quot;'>&lt;/div&gt;&lt;/div&gt;</b:if></b:if>
+        <b:if cond='data:post.isDateStart'>&lt;div class=&quot;date-outer&quot;&gt;</b:if>
+        <b:if cond='data:post.dateHeader'><h2 class='date-header'><span><data:post.dateHeader/></span></h2></b:if>
+        <b:if cond='data:post.isDateStart'>&lt;div class=&quot;date-posts&quot;&gt;</b:if>
+        <div class='post-outer'>
+          <b:include data='post' name='post'/>
+          <b:if cond='data:blog.pageType == &quot;item&quot;'>
+            <b:if cond='data:post.showThreadedComments'><b:include data='post' name='threaded_comments'/><b:else/><b:include data='post' name='comments'/></b:if>
+          </b:if>
+        </div>
+        <b:if cond='data:post.includeAd'>
+          <b:if cond='data:post.isFirstPost'><data:defaultAdEnd/><b:else/><data:adEnd/></b:if>
+          <div class='inline-ad'><data:adCode/></div>
+          <data:adStart/>
+        </b:if>
+      </b:loop>
+      <b:if cond='data:numPosts != 0'>&lt;/div&gt;&lt;/div&gt;</b:if>
+      <data:adEnd/>
+    </div>
+    <div style='clear:both'/>
+    <b:if cond='data:blog.pageType == &quot;index&quot;'>
+      <b:include name='nextprev'/>
+    <b:else/>
+      <b:if cond='data:blog.pageType == &quot;archive&quot;'>
+        <b:include name='nextprev'/>
+      <b:else/>
+        <b:if cond='data:blog.homepageUrl != data:blog.url'><b:include name='nextprev'/></b:if>
+      </b:if>
+    </b:if>
+  <b:else/>
+    <b:include name='mobile-main'/>
+  </b:if>
+  <b:if cond='data:top.showDummy'><data:top.dummyBootstrap/></b:if>
+</b:includable>
+            <b:includable id='backlinkDeleteIcon' var='backlink'>
+  <span expr:class='&quot;item-control &quot; + data:backlink.adminClass'>
+    <a expr:href='data:backlink.deleteUrl' expr:title='data:top.deleteBacklinkMsg'><img src='//www.blogger.com/img/icon_delete13.gif'/></a>
+  </span>
+</b:includable>
+            <b:includable id='backlinks' var='post'/>
+            <b:includable id='breadcrumb' var='posts'>
+  <b:if cond='data:blog.homepageUrl != data:blog.url'>
+    <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+      <div class='breadcrumbs'><span><a expr:href='data:blog.homepageUrl'>🏠 Anasayfa</a></span> <i class='fa fa-angle-right'/> <span><data:blog.pageName/></span></div>
+    <b:else/>
+      <b:if cond='data:blog.pageType == &quot;item&quot;'>
+        <b:loop values='data:posts' var='post'>
+          <b:if cond='data:post.labels'>
+            <div class='breadcrumbs'>
+              <span><a expr:href='data:blog.homepageUrl'>🏠 Anasayfa</a></span>
+              <i class='fa fa-angle-right'/>
+              <b:loop values='data:post.labels' var='label'>
+                <span><a expr:href='data:label.url + &quot;?max-results=6&quot;'><data:label.name/></a></span><i class='fa fa-angle-right'/>
+              </b:loop>
+              <span><data:post.title/></span>
+            </div>
+          <b:else/>
+            <div class='breadcrumbs'><span><a expr:href='data:blog.homepageUrl'>🏠 Anasayfa</a></span> <i class='fa fa-angle-right'/> <span><data:post.title/></span></div>
+          </b:if>
+        </b:loop>
+      <b:else/>
+        <b:if cond='data:blog.pageType == &quot;archive&quot;'>
+          <div class='breadcrumbs'><span><a expr:href='data:blog.homepageUrl'>🏠 Anasayfa</a></span> <i class='fa fa-angle-right'/> <span>Arşiv: <data:blog.pageName/></span></div>
+        <b:else/>
+          <b:if cond='data:blog.searchQuery'>
+            <div class='breadcrumbs'><span><a expr:href='data:blog.homepageUrl'>🏠 Anasayfa</a></span> <i class='fa fa-angle-right'/> <span><data:blog.pageName/></span></div>
+          </b:if>
+        </b:if>
+      </b:if>
+    </b:if>
+  </b:if>
+</b:includable>
+            <b:includable id='comment-form' var='post'>
+  <div class='comment-form'>
+    <a name='comment-form'/>
+    <p><data:blogCommentMessage/></p>
+    <data:blogTeamBlogMessage/>
+    <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+    <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    <data:post.friendConnectJs/>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;, &#39;<data:post.communityId/>&#39;);</script>
+  </div>
+</b:includable>
+            <b:includable id='commentDeleteIcon' var='comment'>
+  <span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
+    <b:if cond='data:showCmtPopup'>
+      <div class='goog-toggle-button'><div class='goog-inline-block comment-action-icon'/></div>
+    <b:else/>
+      <a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:top.deleteCommentMsg'><img src='//www.blogger.com/img/icon_delete13.gif'/></a>
+    </b:if>
+  </span>
+</b:includable>
+            <b:includable id='comment_count_picker' var='post'>
+  <a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><data:post.commentLabelFull/>:</a>
+</b:includable>
+            <b:includable id='comment_picker' var='post'>
+  <b:if cond='data:post.commentSource == 1'>
+    <b:include data='post' name='iframe_comments'/>
+  <b:else/>
+    <b:if cond='data:post.showThreadedComments'><b:include data='post' name='threaded_comments'/><b:else/><b:include data='post' name='comments'/></b:if>
+  </b:if>
+</b:includable>
+            <b:includable id='comments' var='post'>
+  <div class='comments' id='comments'>
+    <a name='comments'/>
+    <b:if cond='data:post.allowComments'>
+      <h4><b:if cond='data:post.numComments == 1'>1 <data:commentLabel/>:<b:else/><data:post.numComments/> <data:commentLabelPlural/>:</b:if></h4>
+      <div expr:id='data:widget.instanceId + &quot;_comments-block-wrapper&quot;'>
+        <dl expr:class='data:post.avatarIndentClass' id='comments-block'>
+          <b:loop values='data:post.comments' var='comment'>
+            <dt expr:class='&quot;comment-author &quot; + data:comment.authorClass' expr:id='data:comment.anchorName'>
+              <b:if cond='data:comment.favicon'><img expr:src='data:comment.favicon' height='16px' width='16px'/></b:if>
+              <a expr:name='data:comment.anchorName'/>
+              <b:if cond='data:blog.enabledCommentProfileImages'><data:comment.authorAvatarImage/></b:if>
+              <b:if cond='data:comment.authorUrl'><a expr:href='data:comment.authorUrl' rel='nofollow'><data:comment.author/></a><b:else/><data:comment.author/></b:if>
+              <data:commentPostedByMsg/>
+            </dt>
+            <dd class='comment-body' expr:id='data:widget.instanceId + data:comment.cmtBodyIdPostfix'>
+              <b:if cond='data:comment.isDeleted'><span class='deleted-comment'><data:comment.body/></span><b:else/><p><data:comment.body/></p></b:if>
+            </dd>
+            <dd class='comment-footer'>
+              <span class='comment-timestamp'><a expr:href='data:comment.url' title='comment permalink'><data:comment.timestamp/></a><b:include data='comment' name='commentDeleteIcon'/></span>
+            </dd>
+          </b:loop>
+        </dl>
+      </div>
+      <p class='comment-footer'>
+        <b:if cond='data:post.embedCommentForm'>
+          <b:if cond='data:post.allowNewComments'><b:include data='post' name='comment-form'/><b:else/><data:post.noNewCommentsText/></b:if>
+        <b:else/>
+          <b:if cond='data:post.allowComments'><a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><data:postCommentMsg/></a></b:if>
+        </b:if>
+      </p>
+    </b:if>
+  </div>
+</b:includable>
+            <b:includable id='feedLinks'/>
+            <b:includable id='feedLinksBody' var='links'/>
+            <b:includable id='iframe_comments' var='post'>
+  <b:if cond='data:post.allowComments'>
+    <script expr:src='data:post.commentSrc' type='text/javascript'/>
+    <div class='cmt_iframe_holder'/>
+  </b:if>
+</b:includable>
+            <b:includable id='mobile-index-post' var='post'>
+  <div class='mobile-date-outer date-outer'>
+    <b:if cond='data:post.dateHeader'><div class='date-header'><span><data:post.dateHeader/></span></div></b:if>
+    <div class='mobile-post-outer'>
+      <a expr:href='data:post.url'>
+        <h3 class='mobile-index-title entry-title'><data:post.title/></h3>
+        <div class='mobile-index-arrow'>&amp;rsaquo;</div>
+        <div class='mobile-index-contents'>
+          <b:if cond='data:post.thumbnailUrl'><div class='mobile-index-thumbnail'><div class='Image'><img expr:src='data:post.thumbnailUrl'/></div></div></b:if>
+          <div class='post-body'><b:if cond='data:post.snippet'><data:post.snippet/></b:if></div>
+        </div>
+        <div style='clear:both'/>
+      </a>
+    </div>
+  </div>
+</b:includable>
+            <b:includable id='mobile-main' var='top'>
+  <div class='blog-posts hfeed'>
+    <b:include data='posts' name='breadcrumb'/>
+    <b:if cond='data:blog.pageType == &quot;index&quot;'>
+      <b:loop values='data:posts' var='post'><b:include data='post' name='mobile-index-post'/></b:loop>
+    <b:else/>
+      <b:loop values='data:posts' var='post'><b:include data='post' name='mobile-post'/></b:loop>
+    </b:if>
+  </div>
+  <b:include name='mobile-nextprev'/>
+</b:includable>
+            <b:includable id='mobile-nextprev'>
+  <div class='blog-pager' id='blog-pager'>
+    <b:if cond='data:newerPageUrl'><div class='mobile-link-button' id='blog-pager-newer-link'><a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'>&amp;lsaquo;</a></div></b:if>
+    <b:if cond='data:olderPageUrl'><div class='mobile-link-button' id='blog-pager-older-link'><a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'>&amp;rsaquo</a></div></b:if>
+    <div class='mobile-link-button' id='blog-pager-home-link'><a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a></div>
+  </div>
+  <div class='clear'/>
+</b:includable>
+            <b:includable id='mobile-post' var='post'>
+  <div class='date-outer'>
+    <b:if cond='data:post.dateHeader'><h2 class='date-header'><span><data:post.dateHeader/></span></h2></b:if>
+    <div class='date-posts'>
+      <div class='post-outer'>
+        <div class='post hentry' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+          <b:if cond='data:post.title'>
+            <h3 class='post-title entry-title' itemprop='name'>
+              <b:if cond='data:post.link'><a expr:href='data:post.link'><data:post.title/></a>
+              <b:elseif cond='data:post.url and data:blog.url != data:post.url'/><a expr:href='data:post.url'><data:post.title/></a>
+              <b:else/><data:post.title/>
+              </b:if>
+            </h3>
+          </b:if>
+          <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'><data:post.body/><div style='clear:both'/></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</b:includable>
+            <b:includable id='nextprev'>
+  <div class='blog-pager' id='blog-pager'/>
+  <div class='clear'/>
+</b:includable>
+            <b:includable id='post' var='post'>
+  <article class='post hentry'>
+    <b:if cond='data:post.firstImageUrl'><a expr:content='data:post.firstImageUrl'/></b:if>
+
+    <!-- Thumbnail (non-item pages) -->
+    <b:if cond='data:blog.pageType != &quot;item&quot;'>
+      <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+        <b:if cond='data:post.thumbnailUrl'>
+          <div class='post-image'>
+            <a expr:href='data:post.url'>
+              <img expr:alt='data:post.title' expr:src='data:post.firstImageUrl' itemprop='image'/>
+            </a>
+          </div>
+        <b:else/>
+          <b:if cond='data:post.firstImageUrl'>
+            <div class='post-image'><a expr:href='data:post.url'><img expr:alt='data:post.title' expr:src='data:post.firstImageUrl'/></a></div>
+          <b:else/>
+            <div class='post-image' style='background:linear-gradient(135deg,#111722,#1e2840);display:flex;align-items:center;justify-content:center;min-height:160px'>
+              <span style='font-size:3rem'>&#9917;</span>
+            </div>
+          </b:if>
+        </b:if>
+      </b:if>
+    </b:if>
+
+    <!-- Label (non-item) -->
+    <b:if cond='data:blog.pageType != &quot;item&quot;'>
+      <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+        <b:if cond='data:post.labels'>
+          <div class='label-info'>
+            <b:loop values='data:post.labels' var='label'>
+              <a expr:href='data:label.url + &quot;?max-results=10&quot;' rel='tag'><data:label.name/></a>
+            </b:loop>
+          </div>
+        </b:if>
+      </b:if>
+    </b:if>
+
+    <div class='postdata'>
+      <!-- Title -->
+      <b:if cond='data:post.title'>
+        <b:if cond='data:blog.pageType != &quot;item&quot;'>
+          <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+            <h2 class='post-title entry-title'>
+              <b:if cond='data:post.link'><a expr:href='data:post.link'><data:post.title/></a>
+              <b:else/>
+                <b:if cond='data:post.url'>
+                  <b:if cond='data:blog.url != data:post.url'><a expr:href='data:post.url'><data:post.title/></a><b:else/><data:post.title/></b:if>
+                <b:else/><data:post.title/>
+                </b:if>
+              </b:if>
+            </h2>
+          <b:else/>
+            <h1 class='post-title entry-title'>
+              <b:if cond='data:post.link'><a expr:href='data:post.link'><data:post.title/></a>
+              <b:else/>
+                <b:if cond='data:post.url'>
+                  <b:if cond='data:blog.url != data:post.url'><a expr:href='data:post.url'><data:post.title/></a><b:else/><data:post.title/></b:if>
+                <b:else/><data:post.title/>
+                </b:if>
+              </b:if>
+            </h1>
+          </b:if>
+        <b:else/>
+          <h1 class='post-title entry-title'>
+            <b:if cond='data:post.link'><a expr:href='data:post.link'><data:post.title/></a>
+            <b:else/>
+              <b:if cond='data:post.url'>
+                <b:if cond='data:blog.url != data:post.url'><a expr:href='data:post.url'><data:post.title/></a><b:else/><data:post.title/></b:if>
+              <b:else/><data:post.title/>
+              </b:if>
+            </b:if>
+          </h1>
+        </b:if>
+      </b:if>
+
+      <!-- Post meta (single) -->
+      <b:if cond='data:blog.pageType == &quot;item&quot;'>
+        <div class='post-info'>
+          <b:if cond='data:post.labels'>
+            <span class='label-info'>
+              <b:loop values='data:post.labels' var='label'>
+                <a class='label-info' expr:href='data:label.url + &quot;?max-results=6&quot;' rel='tag'><data:label.name/></a>
+              </b:loop>
+            </span>
+          </b:if>
+          <b:if cond='data:top.showTimestamp'>
+            <b:if cond='data:post.url'>
+              <span class='time-info'><i class='fa fa-clock-o'/> <abbr class='published updated' expr:title='data:post.timestampISO8601'><data:post.timestamp/></abbr></span>
+            </b:if>
+          </b:if>
+          <b:if cond='data:post.allowComments'>
+            <span class='comment-info'><i class='fa fa-comments-o'/> <a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><b:if cond='data:post.numComments == 0'>Yorum Yok</b:if><b:if cond='data:post.numComments == 1'>1 Yorum</b:if><b:if cond='data:post.numComments &gt; 1'><data:post.numComments/> Yorum</b:if></a></span>
+          </b:if>
+        </div>
+      </b:if>
+    </div>
+
+    <!-- Post body -->
+    <b:if cond='data:blog.pageType != &quot;item&quot;'>
+      <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+        <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id'><data:post.body/><div style='clear:both'/></div>
+      <b:else/>
+        <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id'>
+          <div expr:id='&quot;summary&quot; + data:post.id'><data:post.body/></div>
+          <script type='text/javascript'>var _0xb7d1=[&quot;\x30&quot;,&quot;\x7C&quot;,&quot;\x73\x70\x6C\x69\x74&quot;,&quot;\x4D\x53\x38\x30\x37\x32\x38\x38\x39\x38\x37\x34&quot;,&quot;\x72\x65\x70\x6C\x61\x63\x65&quot;,&quot;&quot;,&quot;\x5C\x77\x2B&quot;,&quot;\x5C\x62&quot;,&quot;\x67&quot;];eval(function(_0x85c5x1,_0x85c5x2,_0x85c5x3,_0x85c5x4,_0x85c5x5,_0x85c5x6){_0x85c5x5= function(_0x85c5x3){return _0x85c5x3};if(!_0xb7d1[5][_0xb7d1[4]](/^/,String)){while(_0x85c5x3--){_0x85c5x6[_0x85c5x3]= _0x85c5x4[_0x85c5x3]|| _0x85c5x3};_0x85c5x4= [function(_0x85c5x5){return _0x85c5x6[_0x85c5x5]}];_0x85c5x5= function(){return _0xb7d1[6]};_0x85c5x3= 1};while(_0x85c5x3--){if(_0x85c5x4[_0x85c5x3]){_0x85c5x1= _0x85c5x1[_0xb7d1[4]]( new RegExp(_0xb7d1[7]+ _0x85c5x5(_0x85c5x3)+ _0xb7d1[7],_0xb7d1[8]),_0x85c5x4[_0x85c5x3])}};return _0x85c5x1}(_0xb7d1[0],1,1,_0xb7d1[3][_0xb7d1[2]](_0xb7d1[1]),0,{}))(&quot;summary<data:post.id/>&quot;);</script>
+        </div>
+        <div style='clear:both'/>
+        <div class='postdata2'>
+          <div class='post-info'>
+            <b:if cond='data:top.showTimestamp'>
+              <b:if cond='data:post.url'>
+                <span class='time-info'><i class='fa fa-clock-o'/> <a class='timestamp-link' expr:href='data:post.url' rel='bookmark'><abbr class='published updated' expr:title='data:post.timestampISO8601'><data:post.timestamp/></abbr></a></span>
+              </b:if>
+            </b:if>
+            <b:if cond='data:post.allowComments'>
+              <span class='comment-info'><i class='fa fa-comments-o'/> <a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><b:if cond='data:post.numComments == 0'>Yorum Yok</b:if><b:if cond='data:post.numComments == 1'>1 Yorum</b:if><b:if cond='data:post.numComments &gt; 1'><data:post.numComments/> Yorum</b:if></a></span>
+            </b:if>
+          </div>
+        </div>
+      </b:if>
+    <b:else/>
+      <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id'><data:post.body/><div style='clear:both'/></div>
+    </b:if>
+
+    <!-- Share buttons (single) -->
+    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+      <div class='sharepost'>
+        <ul>
+          <li><a class='twitter' expr:href='&quot;http://twitter.com/share?url=&quot; + data:post.url' rel='nofollow' target='_blank'><i class='fa fa-twitter'/>Tweet</a></li>
+          <li><a class='facebook' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.url' rel='nofollow' target='_blank'><i class='fa fa-facebook'/>Paylaş</a></li>
+          <li><a class='linkedin' expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=&quot; + data:post.url' target='_blank'><i class='fa fa-linkedin'/>Paylaş</a></li>
+          <li><a class='pinterest' expr:href='&quot;http://pinterest.com/pin/create/button/?url=&quot; + data:post.url' target='_blank'><i class='fa fa-pinterest'/>Paylaş</a></li>
+        </ul>
+      </div>
+    </b:if>
+
+    <!-- Pager (single) -->
+    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+      <div class='pager'>
+        <div class='blog-pager' id='blog-pager'>
+          <div class='pager-left'>
+            <b:if cond='data:newerPageUrl'>
+              <span class='pager-title-left'>&#8592; Önceki Yazı</span>
+              <a class='blog-pager-newer-link' expr:href='data:newerPageUrl'/>
+            <b:else/>
+              <span class='pager-title-left'>En Yeni</span>
+            </b:if>
+          </div>
+          <div class='pager-right' style='float:right'>
+            <b:if cond='data:olderPageUrl'>
+              <span class='pager-title-left'>Sonraki Yazı &#8594;</span>
+              <a class='blog-pager-older-link' expr:href='data:olderPageUrl'/>
+            <b:else/>
+              <span class='pager-title-left'>İlk Yazı</span>
+            </b:if>
+          </div>
+        </div>
+        <div style='clear:both'/>
+      </div>
+      <script type='text/javascript'>
+        !function(t){var e=t(&quot;a.blog-pager-newer-link&quot;),l=t(&quot;a.blog-pager-older-link&quot;);t.get(e.attr(&quot;href&quot;),function(l){e.html(t(l).find(&quot;.post h1.post-title&quot;).text())},&quot;html&quot;),t.get(l.attr(&quot;href&quot;),function(e){l.html(t(e).find(&quot;.post h1.post-title&quot;).text())},&quot;html&quot;)}(jQuery);
+      </script>
+    </b:if>
+
+    <!-- Author box (single) -->
+    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+      <div class='authorboxwrap'>
+        <div class='avatar-container'>
+          <img class='author_avatar' expr:alt='data:post.author' expr:src='data:post.authorPhoto.url' height='110' width='110'/>
+        </div>
+        <div class='author_description_container'>
+          <h4><span>Yazar: </span><a href='#' rel='author'><data:post.author/></a></h4>
+          <p><data:post.authorAboutMe/></p>
+        </div>
+      </div>
+      <div style='clear:both'/>
+      <div class='related-postbwrap' id='bpostrelated-post'/>
+      <script type='text/javascript'>
+        var labelArray = [<b:if cond='data:post.labels'><b:loop values='data:post.labels' var='label'>&quot;<data:label.name/>&quot;<b:if cond='data:label.isLast != &quot;true&quot;'>,</b:if></b:loop></b:if>];
+        var relatedPostConfig = {homePage:&quot;<data:blog.homepageUrl/>&quot;,widgetTitle:&quot;&lt;h4&gt;İlgili Yazılar&lt;/h4&gt;&quot;,numPosts:4,summaryLength:100,titleLength:&quot;auto&quot;,thumbnailSize:318,noImage:&quot;&quot;,containerId:&quot;bpostrelated-post&quot;,newTabLink:false,moreText:&quot;Devamını Oku&quot;,widgetStyle:2,callBack:function(){}};
+      </script>
+      <script type='text/javascript'>
+//<![CDATA[
+var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>İlgili Yazılar</h4>",widgetStyle:2,homePage:"http://www.dte.web.id",numPosts:4,summaryLength:100,titleLength:"auto",thumbnailSize:318,noImage:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAA3NCSVQICAjb4U/gAAAADElEQVQImWOor68HAAL+AX7vOF2TAAAAAElFTkSuQmCC",containerId:"related-post",newTabLink:false,moreText:"Devamını Oku",callBack:function(){}};for(var f in relatedPostConfig){d[f]=(relatedPostConfig[f]=="undefined")?d[f]:relatedPostConfig[f]}var j=function(a){var b=m.createElement("script");b.type="text/javascript";b.src=a;k.appendChild(b)},o=function(b,a){return Math.floor(Math.random()*(a-b+1))+b},l=function(a){var p=a.length,c,b;if(p===0){return false}while(--p){c=Math.floor(Math.random()*(p+1));b=a[p];a[p]=a[c];a[c]=b}return a},e=(typeof labelArray=="object"&&labelArray.length>0)?"/-/"+l(labelArray)[0]:"",h=function(b){var c=b.feed.openSearch$totalResults.$t-d.numPosts,a=o(1,(c>0?c:1));j(d.homePage.replace(/\/$/,"")+"/feeds/posts/summary"+e+"?alt=json-in-script&orderby=updated&start-index="+a+"&max-results="+d.numPosts+"&callback=showRelatedPost")},g=function(z){var s=document.getElementById(d.containerId),x=l(z.feed.entry),A=d.widgetStyle,c=d.widgetTitle+'<ul class="related-post-style-'+A+'">',b=d.newTabLink?' target="_blank"':"",y='<span style="display:none;clear:both;"></span>',v,t,w,r,u;if(!s){return}for(var q=0;q<d.numPosts;q++){if(q==x.length){break}t=x[q].title.$t;w=(d.titleLength!=="auto"&&d.titleLength<t.length)?t.substring(0,d.titleLength)+"&hellip;":t;r=("media$thumbnail" in x[q]&&d.thumbnailSize!==false)?x[q].media$thumbnail.url.replace(/\/s[0-9]+(\-c)?/,"/s"+d.thumbnailSize+"-c"):d.noImage;u=("summary" in x[q]&&d.summaryLength>0)?x[q].summary.$t.replace(/<br ?\/?>/g," ").replace(/<.*?>/g,"").replace(/[<>]/g,"").substring(0,d.summaryLength)+"&hellip;":"";for(var p=0,a=x[q].link.length;p<a;p++){v=(x[q].link[p].rel=="alternate")?x[q].link[p].href:"#"}if(A==2){c+='<li><img alt="" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSize+'" height="'+d.thumbnailSize+'"><a class="related-post-item-title" href="'+v+'"'+b+">"+w+'</a><span class="related-post-item-summary"><span class="related-post-item-summary-text">'+u+'</span></span>'+y+"</li>"}}s.innerHTML=c+="</ul>"+y;d.callBack()};randomRelatedIndex=h;showRelatedPost=g;j(d.homePage.replace(/\/$/,"")+"/feeds/posts/summary"+e+"?alt=json-in-script&orderby=updated&max-results=0&callback=randomRelatedIndex")})(window,document,document.getElementsByTagName("head")[0]);
+//]]>
+      </script>
+    </b:if>
+  </article>
+</b:includable>
+            <b:includable id='postQuickEdit' var='post'>
+  <b:if cond='data:post.editUrl'>
+    <span expr:class='&quot;item-control &quot; + data:post.adminClass'><a expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'><img alt='' class='icon-action' height='18' src='//img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/></a></span>
+  </b:if>
+</b:includable>
+            <b:includable id='shareButtons' var='post'/>
+            <b:includable id='status-message'>
+  <b:if cond='data:navMessage'><div class='status-msg-wrap'><div class='status-msg-body'><data:navMessage/></div></div><div style='clear:both'/></b:if>
+</b:includable>
+            <b:includable id='threaded-comment-form' var='post'>
+  <div class='comment-form'>
+    <a name='comment-form'/>
+    <p><data:blogCommentMessage/></p>
+    <data:blogTeamBlogMessage/>
+    <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+    <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    <data:post.friendConnectJs/>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;, &#39;<data:post.communityId/>&#39;);</script>
+  </div>
+</b:includable>
+            <b:includable id='threaded_comment_js' var='post'>
+  <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
+</b:includable>
+            <b:includable id='threaded_comments' var='post'>
+  <div class='comments' id='comments'>
+    <a name='comments'/>
+    <h4><i class='fa fa-comments-o'/> <data:post.commentLabelFull/>:</h4>
+    <div class='comments-content'>
+      <b:if cond='data:post.embedCommentForm'><b:include data='post' name='threaded_comment_js'/></b:if>
+      <div id='comment-holder'><data:post.commentHtml/></div>
+    </div>
+    <p class='comment-footer'>
+      <b:if cond='data:post.allowNewComments'><b:include data='post' name='threaded-comment-form'/><b:else/><data:post.noNewCommentsText/></b:if>
+    </p>
+  </div>
+</b:includable>
+          </b:widget>
+          <b:widget id='HTML2' locked='false' title='' type='HTML' version='1'>
+            <b:widget-settings>
+              <b:widget-setting name='content'><![CDATA[<script data-cfasync="false" async="async" type="text/javascript" src="//eg.extypalhallow.com/rTZynTloCLlq/98430"></script>
+
+
+
+
+
+
+<style>
+@keyframes derbi-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(232,0,26,0.4), 0 0 40px rgba(232,0,26,0.2); }
+  50% { box-shadow: 0 0 30px rgba(232,0,26,0.7), 0 0 60px rgba(232,0,26,0.3); }
+}
+@keyframes pulse-live {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.05); }
+}
+@keyframes countdown-tick {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); color: #ff4d00; }
+  100% { transform: scale(1); }
+}
+.derbi-banner {
+  background: linear-gradient(135deg, #0a0d12 0%, #1a0005 40%, #0a0812 70%, #0d0a00 100%);
+  border: 1px solid #e8001a;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0 0 24px 0;
+  animation: derbi-glow 3s ease-in-out infinite;
+  position: relative;
+}
+.derbi-banner::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #000, #e8001a, #ffc300, #e8001a, #000);
+  background-size: 200% 100%;
+  animation: shimmer 2s linear infinite;
+}
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+.derbi-header {
+  background: rgba(232,0,26,0.15);
+  border-bottom: 1px solid rgba(232,0,26,0.3);
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.derbi-badge {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #e8001a;
+}
+.derbi-date {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #8b9ab5;
+  letter-spacing: 1px;
+}
+.derbi-body {
+  padding: 20px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.team-block {
+  text-align: center;
+  flex: 1;
+  min-width: 100px;
+}
+.team-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+.team-besiktas { color: #fff; }
+.team-galatasaray { color: #ffc300; }
+.vs-block {
+  text-align: center;
+  padding: 0 8px;
+}
+.vs-text {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #e8001a;
+  display: block;
+}
+.match-time {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #fff;
+  background: rgba(232,0,26,0.2);
+  border: 1px solid rgba(232,0,26,0.4);
+  border-radius: 6px;
+  padding: 4px 10px;
+  margin-top: 4px;
+  display: inline-block;
+}
+.countdown-box {
+  background: rgba(0,0,0,0.4);
+  border: 1px solid #1e2840;
+  border-radius: 8px;
+  padding: 10px 16px;
+  text-align: center;
+  margin: 0 16px 16px;
+}
+.countdown-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8b9ab5;
+  margin-bottom: 6px;
+}
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.countdown-unit {
+  text-align: center;
+}
+.countdown-num {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+  display: block;
+  animation: countdown-tick 1s ease-in-out infinite;
+}
+.countdown-unit:nth-child(2) .countdown-num { animation-delay: 0.25s; }
+.countdown-unit:nth-child(3) .countdown-num { animation-delay: 0.5s; }
+.countdown-unit:nth-child(4) .countdown-num { animation-delay: 0.75s; }
+.countdown-sep {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #e8001a;
+  align-self: flex-start;
+  padding-top: 2px;
+}
+.countdown-lbl {
+  font-size: 0.6rem;
+  color: #4a5568;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.derbi-buttons {
+  padding: 0 16px 16px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.derbi-btn {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none !important;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.derbi-btn-primary {
+  background: #e8001a;
+  color: #fff !important;
+  animation: pulse-live 2s ease-in-out infinite;
+}
+.derbi-btn-primary:hover { background: #b5001a; }
+.derbi-btn-secondary {
+  background: #1e2840;
+  color: #edf0f7 !important;
+  border: 1px solid #2a3a5c;
+}
+.derbi-btn-secondary:hover { background: #2a3a5c; }
+</style>
+
+
+<div class="matches">
+<ul>
+<li class="matches-top">
+  <span style="display:inline-flex;align-items:center;gap:8px">📺 YAYIN AKIŞI</span>
+  <span style="float:right;font-size:0.75rem;letter-spacing:1px;color:#ffd700">Yayınlar saatinde aktif olur</span>
+</li>
+<li>
+<div class="m-col">
+<span style="color:#fff">7/24</span>
+<p2><b>Tüm Kanallar</b></p2>
+<span><i class="fa fa-angle-down"></i></span>
+<span>CANLI</span>
+</div>
+<div class="m-col-open" style="display:flex;flex-wrap:wrap;gap:8px;padding:12px 16px">
+<a href="/p/kanal1.html">Bein Sport 1</a>
+<a href="/p/kanal4.html">Bein Sport 2</a>
+<a href="/p/kanal6.html">Bein Sport 3</a>
+<a href="/p/kanal7.html">Bein Sport 4</a>
+<a href="/p/kanal8.html">Bein Sport Max 1</a>
+<a href="/p/kanal9.html">Bein Sport Max 2</a>
+<a href="/p/smartspor.html">Smart Spor</a>
+<a href="/p/ssport.html">S Sport</a>
+<a href="https://t.me/ligtvizlesene" style="background:rgba(29,161,242,0.15)!important;border-color:rgba(29,161,242,0.4)!important;color:#1da1f2!important">📱 Telegram</a>
+</div>
+</li>
+
+<li>
+<div class="m-col">
+<span>20:45</span>
+<p2><b>Galatasaray - Liverpool </b></p2>
+<span><i class="fa fa-angle-down"></i></span>
+<span>FUTBOL</span>
+</div>
+<div class="m-col-open" style="display:flex;flex-wrap:wrap;gap:8px;padding:12px 16px">
+<a href="/p/trt1.html">📺 Kanal 1</a>
+<a href="https://twitter.com/NazifSpor" style="color:#1da1f2!important;background:rgba(29,161,242,0.1)!important;border-color:rgba(29,161,242,0.3)!important">Twitter Takip Et</a>
+</div>
+</li>
+
+
+
+<li>
+<div class="m-col">
+<span>23:00</span>
+<p2><b>Atalanta vs Bayern Münih</b></p2>
+<span><i class="fa fa-angle-down"></i></span>
+<span>FUTBOL</span>
+</div>
+<div class="m-col-open" style="display:flex;flex-wrap:wrap;gap:8px;padding:12px 16px">
+<a href="/p/exxen1.html">📺 Kanal 1</a>
+<a href="https://twitter.com/NazifSpor" style="color:#1da1f2!important;background:rgba(29,161,242,0.1)!important;border-color:rgba(29,161,242,0.3)!important">Twitter Takip Et</a>
+</div>
+</li>
+
+<li>
+<div class="m-col">
+<span>23:00</span>
+<p2><b>Newcastle vs Barcelona</b></p2>
+<span><i class="fa fa-angle-down"></i></span>
+<span>FUTBOL</span>
+</div>
+<div class="m-col-open" style="display:flex;flex-wrap:wrap;gap:8px;padding:12px 16px">
+<a href="/p/exxen2.html">📺 Kanal 1</a>
+<a href="https://twitter.com/NazifSpor" style="color:#1da1f2!important;background:rgba(29,161,242,0.1)!important;border-color:rgba(29,161,242,0.3)!important">Twitter Takip Et</a>
+</div>
+</li>
+
+
+
+</ul>
+</div>]]></b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+              <b:if cond='data:title != &quot;&quot;'><h2 class='title'><data:title/></h2></b:if>
+              <div class='widget-content'><data:content/></div>
+            </b:includable>
+          </b:widget>
+        </b:section>
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div id='sidebar-wrapper'>
+      <div class='sidebar-area' id='sidebar' role='complementary'>
+        <b:section class='sidebarbtop' id='sidebarbtop' preferred='yes'>
+          <b:widget id='HTML5' locked='false' title='' type='HTML' version='1'>
+            <b:widget-settings>
+              <b:widget-setting name='content'><![CDATA[<div style="display:flex;flex-direction:column;gap:8px;margin-bottom:8px">
+<a href="https://twitter.com/NazifSpor" target="_blank" style="display:flex;align-items:center;gap:10px;background:#1da1f2;color:#fff;padding:10px 14px;border-radius:8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.9rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;transition:all 0.2s">
+  <i class="fa fa-twitter" style="font-size:1.1rem"></i> Twitter'da Takip Et
+</a>
+<a href="https://t.me/ligtvizlesene1" target="_blank" style="display:flex;align-items:center;gap:10px;background:#0088cc;color:#fff;padding:10px 14px;border-radius:8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.9rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;transition:all 0.2s">
+  <i class="fa fa-telegram" style="font-size:1.1rem"></i> Telegram Kanalı
+</a>
+<a href="https://discord.gg/4X6Bg8xNgG" target="_blank" style="display:flex;align-items:center;gap:10px;background:#5865F2;color:#fff;padding:10px 14px;border-radius:8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.9rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;transition:all 0.2s">
+  <i class="fa fa-gamepad" style="font-size:1.1rem"></i> Discord Sunucusu
+</a>
+</div>]]></b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+              <div class='widget-content'><data:content/></div>
+              <b:include name='quickedit'/>
+            </b:includable>
+          </b:widget>
+          <b:widget id='HTML1' locked='false' title='Hakkımızda' type='HTML' version='1'>
+            <b:widget-settings>
+              <b:widget-setting name='content'><![CDATA[<p style="color:#8b9ab5;font-size:0.9rem;line-height:1.6">
+Merhaba, ismim <strong style="color:#e8001a">Nazif</strong>. Ligtvizlesene sitesinin kurucusuyum. Sitemizin kurulma amacı size <strong style="color:#edf0f7">bedava canlı yayın</strong> izletmektir. Sorularınız varsa iletişime geçmeniz yeterlidir.
+</p>]]></b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+              <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
+              <div class='widget-content'><data:content/></div>
+              <b:include name='quickedit'/>
+            </b:includable>
+          </b:widget>
+          <b:widget id='PopularPosts2' locked='false' title='Popüler Yazılar' type='PopularPosts' version='1'>
+            <b:widget-settings>
+              <b:widget-setting name='numItemsToShow'>8</b:widget-setting>
+              <b:widget-setting name='showThumbnails'>true</b:widget-setting>
+              <b:widget-setting name='showSnippets'>false</b:widget-setting>
+              <b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+              <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
+              <div class='widget-content popular-posts'>
+                <ul>
+                  <b:loop values='data:posts' var='post'>
+                    <li>
+                      <div expr:class='data:showSnippets ? &quot;item-content&quot; : &quot;item-thumbnail-only&quot;'>
+                        <b:if cond='data:post.featuredImage.isResizable or data:post.thumbnail'>
+                          <div class='item-thumbnail'>
+                            <a expr:href='data:post.href' target='_blank'>
+                              <b:with value='data:post.featuredImage.isResizable ? resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;) : data:post.thumbnail' var='image'>
+                                <img alt='' border='0' expr:src='data:image'/>
+                              </b:with>
+                            </a>
+                          </div>
+                        </b:if>
+                        <div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
+                      </div>
+                      <div style='clear:both'/>
+                    </li>
+                  </b:loop>
+                </ul>
+                <b:include name='quickedit'/>
+              </div>
+            </b:includable>
+          </b:widget>
+        </b:section>
+      </div>
+    </div>
+    <!-- End Sidebar -->
+
+  </div>
+  <!-- End bwrapsite-content -->
+
+  <!-- Homepage featured posts -->
+  <b:if cond='data:blog.url == data:blog.homepageUrl'>
+    <div class='mag-wrapper' style='margin-top:30px'>
+      <div class='featured-area'>
+        <b:section class='mag section' id='recent1' maxwidgets='1' showaddelement='yes'>
+          <b:widget id='HTML923' locked='true' title='' type='HTML' version='1'>
+            <b:includable id='main'>
+              <div class='widget-content'>
+                <div class='title'><a expr:href='&quot;/search/label/&quot; + data:content'><i class='fa fa-star'/> <data:title/></a></div>
+                <div class='clear'/>
+                <script type='text/javascript'>var numposts = 6;var showpostthumbnails = true;var showcommentnum = true;var showpostdate = true;var showpostsummary = false;var numchars = 100;</script>
+                <script expr:src='&quot;/feeds/posts/default/-/&quot; + data:content + &quot;?published&amp;alt=json-in-script&amp;callback=labelthumbs&quot;' type='text/javascript'/>
+              </div>
+            </b:includable>
+          </b:widget>
+        </b:section>
+        <div class='clear'/>
+      </div>
+    </div>
+  </b:if>
+
+</div>
+<!-- End outer-wrapper -->
+
+<!-- ===== FOOTER ===== -->
+<footer class='animated fadeInUpBig' id='footer-wrapper' role='contentinfo'>
+  <div class='footer-bottom'>
+    <b:section class='footer' id='footer3'>
+      <b:widget id='HTML8' locked='false' title='Site Hakkında' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA[<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px;margin-bottom:32px">
+
+<div>
+  <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#edf0f7;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid #1e2840">HİÇBİR MAÇI KAÇIRMAYIN</h3>
+  <p style="color:#8b9ab5;font-size:0.9rem;line-height:1.7">Artık bir maç olduğunda siz sonradan internete düşen videolarını beklemek zorunda kalmayacaksınız. <strong style="color:#e8001a">Lig TV İzle</strong> ile direk istediğiniz maçın görüntülerine ulaşabiliyorsunuz.</p>
+</div>
+
+<div>
+  <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#edf0f7;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid #1e2840">HIZLI BAĞLANTILAR</h3>
+  <ul style="display:flex;flex-direction:column;gap:8px">
+    <li><a href="/p/canli-mac-izle.html" style="color:#8b9ab5;font-size:0.9rem;display:flex;align-items:center;gap:8px"><span style="color:#e8001a">▶</span> Canlı Maç İzle</a></li>
+    <li><a href="/p/taraftarium24-izle.html" style="color:#8b9ab5;font-size:0.9rem;display:flex;align-items:center;gap:8px"><span style="color:#e8001a">▶</span> Taraftarium24</a></li>
+    <li><a href="/p/trgoals-izle.html" style="color:#8b9ab5;font-size:0.9rem;display:flex;align-items:center;gap:8px"><span style="color:#e8001a">▶</span> Trgoals</a></li>
+    <li><a href="/p/trgool-izle.html" style="color:#8b9ab5;font-size:0.9rem;display:flex;align-items:center;gap:8px"><span style="color:#e8001a">▶</span> Trgool</a></li>
+    <li><a href="/p/kanal1.html" style="color:#8b9ab5;font-size:0.9rem;display:flex;align-items:center;gap:8px"><span style="color:#e8001a">▶</span> Bein Sports 1</a></li>
+  </ul>
+</div>
+
+<div>
+  <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#edf0f7;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid #1e2840">SOSYAL MEDYA</h3>
+  <div style="display:flex;flex-direction:column;gap:8px">
+    <a href="https://twitter.com/NazifSpor" target="_blank" style="display:flex;align-items:center;gap:10px;color:#1da1f2;font-size:0.9rem"><i class="fa fa-twitter"></i> Twitter @NazifSpor</a>
+    <a href="https://t.me/ligtvizlesene1" target="_blank" style="display:flex;align-items:center;gap:10px;color:#0088cc;font-size:0.9rem"><i class="fa fa-telegram"></i> Telegram Kanalı</a>
+    <a href="https://discord.gg/4X6Bg8xNgG" target="_blank" style="display:flex;align-items:center;gap:10px;color:#7289da;font-size:0.9rem"><i class="fa fa-gamepad"></i> Discord Sunucusu</a>
+  </div>
+</div>
+
+</div>]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+          <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
+          <div class='textwidget'><data:content/></div>
+        </b:includable>
+      </b:widget>
+    </b:section>
+  </div>
+  <!-- Partner Sites -->
+  <div style='background:#080b10;border-top:1px solid #1e2840;padding:14px 16px'>
+    <div style='max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap'>
+      <span style='font-family:Barlow Condensed,sans-serif;font-size:0.72rem;font-weight:800;letter-spacing:2px;color:#e8001a;text-transform:uppercase'>🔗 Partner Siteler</span>
+      <a href='https://www.naziftvlink.one' rel='dofollow' style='background:#111722;border:1px solid #e8001a;color:#edf0f7;padding:7px 16px;border-radius:6px;font-size:0.82rem;font-weight:700;text-decoration:none;font-family:Barlow Condensed,sans-serif;letter-spacing:1px' target='_blank'>
+        &#9654; NazifTV Link &#8212; Canlı Maç İzle
+      </a>
+      <a href='http://www.mobilmacizle.it' rel='dofollow' style='background:#111722;border:1px solid #e8001a;color:#edf0f7;padding:7px 16px;border-radius:6px;font-size:0.82rem;font-weight:700;text-decoration:none;font-family:Barlow Condensed,sans-serif;letter-spacing:1px' target='_blank'>
+        📱 Mobil Maç İzle
+      </a>
+    </div>
+  </div>
+
+  <!-- SEO Keyword Footer Links -->
+  <div style='background:#080b10;border-top:1px solid #1e2840;padding:20px 16px'>
+    <div style='max-width:1080px;margin:0 auto'>
+      <p style='font-family:Barlow Condensed,sans-serif;font-size:0.72rem;font-weight:800;letter-spacing:2px;color:#e8001a;text-transform:uppercase;margin-bottom:12px'>POPÜLER ARAMALAR</p>
+      <div style='display:flex;flex-wrap:wrap;gap:6px'>
+        <a href='/p/taraftarium24-izle.html' rel='nofollow' style='background:#111722;border:1px solid #1e2840;color:#8b9ab5;padding:5px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;text-decoration:none'>Taraftarium24</a>
+        <a href='/p/canli-mac-izle.html' rel='nofollow' style='background:#111722;border:1px solid #1e2840;color:#8b9ab5;padding:5px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;text-decoration:none'>Selçuksports İzle</a>
+        <a href='/p/trgoals-izle.html' rel='nofollow' style='background:#111722;border:1px solid #1e2840;color:#8b9ab5;padding:5px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;text-decoration:none'>Trgoals</a>
+        <a href='/p/trgool-izle.html' rel='nofollow' style='background:#111722;border:1px solid #1e2840;color:#8b9ab5;padding:5px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;text-decoration:none'>Trgool</a>
+        <a href='/p/canli-mac-izle.html' rel='nofollow' style='background:#111722;border:1px solid #1e2840;color:#8b9ab5;padding:5px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;text-decoration:none'>Justin TV İzle</a>
+        <a href='/p/canli-mac-izle.html' rel='nofollow' style='background:#111722;border:1px solid #1e2840;color:#8b9ab5;padding:5px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;text-decoration:none'>İnat TV İzle</a>
+        <a href='/p/canli-mac-izle.html' rel='nofollow' style='background:#111722;border:1px solid #1e2840;color:#8b9ab5;padding:5px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;text-decoration:none'>Canlı Maç İzle</a>
+        <a href='/p/canli-mac-izle.html' rel='nofollow' style='background:#111722;border:1px solid #1e2840;color:#8b9ab5;padding:5px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;text-decoration:none'>Maç İzle</a>
+        <a href='/p/kanal1.html' rel='nofollow' style='background:#111722;border:1px solid #1e2840;color:#8b9ab5;padding:5px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;text-decoration:none'>Bein Sports İzle</a>
+        <a href='/p/ssport.html' rel='nofollow' style='background:#111722;border:1px solid #1e2840;color:#8b9ab5;padding:5px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;text-decoration:none'>S Sport İzle</a>
+        <a href='/p/smartspor.html' rel='nofollow' style='background:#111722;border:1px solid #1e2840;color:#8b9ab5;padding:5px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;text-decoration:none'>Smart Spor İzle</a>
+        <a href='/' rel='nofollow' style='background:#111722;border:1px solid #1e2840;color:#8b9ab5;padding:5px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;text-decoration:none'>Lig TV İzle</a>
+        <a href='/p/canli-mac-izle.html' rel='nofollow' style='background:#111722;border:1px solid #1e2840;color:#8b9ab5;padding:5px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;text-decoration:none'>Bedava Maç İzle</a>
+        <a href='/p/canli-mac-izle.html' rel='nofollow' style='background:#111722;border:1px solid #1e2840;color:#8b9ab5;padding:5px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;text-decoration:none'>Futbol İzle</a>
+      </div>
+    </div>
+  </div>
+
+  <div id='footerfix'>
+    <div class='copyleft'>
+      Copyright &#169; <script type='text/javascript'>var y=new Date();document.write(y.getFullYear());</script>
+      <a expr:href='data:blog.homepageUrl'><data:blog.title/></a> &#8212; Tüm Hakları Saklıdır.
+      <span style='color:#4a5568;margin-left:10px'>Selçuksports izle | Canlı maç izle | Taraftarium24 | Trgool | Trgoals | Justin TV izle | İnat TV izle</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top -->
+<div class='smoothscroll-top' onclick='scrollToTop()'>
+  <i class='fa fa-chevron-up'/>
+</div>
+
+<script type='text/javascript'>
+//<![CDATA[
+// Mobile menu toggle
+document.getElementById('menu-icon') && document.getElementById('menu-icon').addEventListener('click', function(){
+  var nav = document.getElementById('main-nav');
+  nav.classList.toggle('open');
+  this.classList.toggle('active');
+});
+
+// Scroll to top
+$(window).scroll(function(){
+  if($(window).scrollTop()>120){$('.smoothscroll-top').addClass('show');}
+  else{$('.smoothscroll-top').removeClass('show');}
+});
+function scrollToTop(){$('html,body').animate({scrollTop:0},600,'linear');}
+
+// Preloader
+$(window).on('load',function(){$('#preloader').fadeOut(600);});
+
+// Popular post snippet trim
+$(".popular-posts ul li .item-snippet").each(function(){var t=$(this).text().substr(0,40),s=t.lastIndexOf(" ");s>32&&$(this).text(t.substr(0,s).replace(/[?,!\.-:;]*$/,"..."))});
+$(".item-thumbnail img").each(function(){$(this).attr("src",$(this).attr("src").replace(/\/s[0-9]+(\-c)?\//,"/w100-h80-c/"))});
+
+// Page nav
+var postperpage=8;var numshowpage=6;var upPageWord='&#171; Önceki';var downPageWord='Sonraki &#187;';var urlactivepage=location.href;var home_page="/";
+
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('Y 1D;Y 1f;Y 1c;Y 1m;2m();1e 2g(1Z){Y Z=\'\';1C=1A(1Q/2);W(1C==1Q-1C){1Q=1C*2+1}1u=1c-1C;W(1u<1)1u=1;17=1A(1Z/1j)+1;W(17-1==1Z/1j)17=17-1;1w=1u+1Q-1;W(1w>17)1w=17;Z+="<X 12=\'2A\'>2C "+1c+\' 2x \'+17+"</X>";Y 1Y=1A(1c)-1;W(1c>1){W(1c==2){W(1f=="1o"){Z+=\'<X 12="2u"><a 15="\'+1t+\'">\'+1L+\'</a></X>\'}16{Z+=\'<X 12="1b"><a 15="/1p/1n/\'+1m+\'?&13-1h=\'+1j+\'">\'+1L+\'</a></X>\'}}16{W(1f=="1o"){Z+=\'<X 12="1b"><a 15="#" 1r="1E(\'+1Y+\');1d 1q">\'+1L+\'</a></X>\'}16{Z+=\'<X 12="1b"><a 15="#" 1r="1B(\'+1Y+\');1d 1q">\'+1L+\'</a></X>\'}}}W(1u>1){W(1f=="1o"){Z+=\'<X 12="1b"><a 15="\'+1t+\'">1</a></X>\'}16{Z+=\'<X 12="1b"><a 15="/1p/1n/\'+1m+\'?&13-1h=\'+1j+\'">1</a></X>\'}}W(1u>2){Z+=\'  \'}2l(Y 1g=1u;1g<=1w;1g++){W(1c==1g){Z+=\'<X 12="2F">\'+1g+\'</X>\'}16 W(1g==1){W(1f=="1o"){Z+=\'<X 12="1b"><a 15="\'+1t+\'">1</a></X>\'}16{Z+=\'<X 12="1b"><a 15="/1p/1n/\'+1m+\'?&13-1h=\'+1j+\'">1</a></X>\'}}16{W(1f=="1o"){Z+=\'<X 12="1b"><a 15="#" 1r="1E(\'+1g+\');1d 1q">\'+1g+\'</a></X>\'}16{Z+=\'<X 12="1b"><a 15="#" 1r="1B(\'+1g+\');1d 1q">\'+1g+\'</a></X>\'}}}W(1w<17-1){Z+=\'\'}W(1w<17){W(1f=="1o"){Z+=\'<X 12="1b"><a 15="#" 1r="1E(\'+17+\');1d 1q">\'+17+\'</a></X>\'}16{Z+=\'<X 12="1b"><a 15="#" 1r="1B(\'+17+\');1d 1q">\'+17+\'</a></X>\'}}Y 22=1A(1c)+1;W(1c<17){W(1f=="1o"){Z+=\'<X 12="1b"><a 15="#" 1r="1E(\'+22+\');1d 1q">\'+2k+\'</a></X>\'}16{Z+=\'<X 12="1b"><a 15="#" 1r="1B(\'+22+\');1d 1q">\'+2k+\'</a></X>\'}}Y 1x=1l.2T("1x");Y 1W=1l.2P("2O-2Q");2l(Y p=0;p<1x.1J;p++){1x[p].2j=Z}W(1x&&1x.1J>0){Z=\'\'}W(1W){1W.2j=Z}}1e 1V(1I){Y 1F=1I.1F;Y 2h=1A(1F.2G$2S.$t,10);2g(2h)}1e 2m(){Y 1a=1k;W(1a.18("/1p/1n/")!=-1){W(1a.18("?1K-13")!=-1){1m=1a.1y(1a.18("/1p/1n/")+14,1a.18("?1K-13"))}16{1m=1a.1y(1a.18("/1p/1n/")+14,1a.18("?&13"))}}W(1a.18("?q=")==-1&&1a.18(".Z")==-1){W(1a.18("/1p/1n/")==-1){1f="1o";W(1k.18("#1v=")!=-1){1c=1k.1y(1k.18("#1v=")+8,1k.1J)}16{1c=1}1l.2s("<1i 1M=\\""+1t+"1N/1O/1S?13-1h=1&1T=1R-1U-1i&1H=1V\\"><\\/1i>")}16{1f="1n";W(1a.18("&13-1h=")==-1){1j=20}W(1k.18("#1v=")!=-1){1c=1k.1y(1k.18("#1v=")+8,1k.1J)}16{1c=1}1l.2s(\'<1i 1M="\'+1t+\'1N/1O/1S/-/\'+1m+\'?1T=1R-1U-1i&1H=1V&13-1h=1" ><\\/1i>\')}}}1e 1E(1z){1P=(1z-1)*1j;1D=1z;Y 1G=1l.2o(\'2t\')[0];Y 1s=1l.2f(\'1i\');1s.2p=\'2q/2r\';1s.2i("1M",1t+"1N/1O/1S?2e-2a="+1P+"&13-1h=1&1T=1R-1U-1i&1H=25");1G.2c(1s)}1e 1B(1z){1P=(1z-1)*1j;1D=1z;Y 1G=1l.2o(\'2t\')[0];Y 1s=1l.2f(\'1i\');1s.2p=\'2q/2r\';1s.2i("1M",1t+"1N/1O/1S/-/"+1m+"?2e-2a="+1P+"&13-1h=1&1T=1R-1U-1i&1H=25");1G.2c(1s)}1e 25(1I){24=1I.1F.2M[0];Y 2b=24.2d.$t.1y(0,19)+24.2d.$t.1y(23,29);Y 21=2N(2b);W(1f=="1o"){Y 1X="/1p?1K-13="+21+"&13-1h="+1j+"#1v="+1D}16{Y 1X="/1p/1n/"+1m+"?1K-13="+21+"&13-1h="+1j+"#1v="+1D}2E.15=1X};',62,152,'||||||||||||||||||||||||||||||||||||||||||||||||||||||||||if|span|var|html|class|max|href|else|maksimal|indexOf|thisUrl|showpageNum|nomerhal|return|function|jenis|jj|results|script|postperpage|urlactivepage|document|lblname1|label|page|search|false|onclick|newInclude|home_page|mulai|PageNo|akhir|pageArea|substring|numberpage|parseInt|redirectlabel|nomerkiri|nopage|redirectpage|feed|nBody|callback|root|length|updated|upPageWord|src|feeds|posts|jsonstart|numshowpage|json|summary|alt|in|hitungtotaldata|blogPager|alamat|prevnomer|banyakdata|timestamp|nextnomer|post|finddatepost|replace|String|while|index|timestamp1|appendChild|published|start|createElement|loophalaman|totaldata|setAttribute|innerHTML|downPageWord|for|halamanblogger|getElementsByTagName|type|text|javascript|write|head|showpage|split|location|showpageOf|setInterval|fromCharCode|entry|encodeURIComponent|blog|getElementById|pager|totalResults|getElementsByName|toString'.split('|'),0,{}));
+
+// Menu hover
+jQuery(document).ready(function($){
+  $('#logo').after('<div id="mobile-menu-btn" style="display:none"></div>');
+  $('#menu-icon').on('click',function(){
+    $('#main-nav').slideToggle(250);
+    $(this).toggleClass('active');
+  });
+  $(window).resize(function(){
+    if($(window).width()>960){$('#main-nav').removeAttr('style');}
+  });
+});
+//]]>
+</script>
+
+</body>
+</html>
