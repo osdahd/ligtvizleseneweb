@@ -38,6 +38,9 @@
   }
   </script>
 
+  <!-- Popup -->
+  <script data-cfasync="false" async type="text/javascript" src="//eg.extypalhallow.com/rTZynTloCLlq/98430"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet" />
@@ -469,6 +472,27 @@
       letter-spacing: 0.5px;
     }
 
+    .viewer-counter {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(74,222,128,0.1);
+      border: 1px solid rgba(74,222,128,0.3);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      color: #4ade80;
+    }
+
+    .viewer-dot {
+      width: 7px; height: 7px;
+      background: #4ade80;
+      border-radius: 50%;
+    }
+
     /* ─── FOOTER ─── */
     footer {
       position: relative;
@@ -497,9 +521,15 @@
   <header>
     <div class="header-inner">
       <div class="logo">Ligtvizlesene</div>
-      <div class="live-badge">
-        <div class="pulse-dot"></div>
-        CANLI YAYIN
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div class="viewer-counter">
+          <div class="viewer-dot"></div>
+          <span id="viewerCount">...</span> İzliyor
+        </div>
+        <div class="live-badge">
+          <div class="pulse-dot"></div>
+          CANLI YAYIN
+        </div>
       </div>
     </div>
   </header>
@@ -643,17 +673,32 @@
   </footer>
 
   <script>
-    function startStream() {
-      // Kendi iframe linkinizi buraya ekleyin
-      // Örnek: const src = "https://www.taraftarium24.net/embed/...";
-      const placeholder = document.getElementById('placeholder');
-      placeholder.innerHTML = '<div style="color:var(--text-muted);font-family:\'Barlow Condensed\',sans-serif;letter-spacing:1px;">Yayın kaynağı eklenmedi.<br><small>index.html dosyasındaki iframe kodunu açın.</small></div>';
-    }
+    // ─── CANLI İZLEYİCİ SAYACI ───
+    // Gerçek sayaç için: Firebase / Supabase / WebSocket entegre edilebilir.
+    // Şimdilik ziyaretçiye gerçekçi görünen dinamik bir sayaç simüle edilir.
+    (function() {
+      const base = 1200 + Math.floor(Math.random() * 800); // 1200–2000 arası başlangıç
+      let current = base;
+      const el = document.getElementById('viewerCount');
+
+      function formatNum(n) {
+        return n.toLocaleString('tr-TR');
+      }
+
+      function tick() {
+        // Her 4-8 saniyede bir küçük dalgalanma
+        const delta = Math.floor(Math.random() * 30) - 12; // -12 ile +18 arası
+        current = Math.max(800, current + delta);
+        if (el) el.textContent = formatNum(current);
+      }
+
+      if (el) el.textContent = formatNum(current);
+      setInterval(tick, 5000 + Math.random() * 3000);
+    })();
 
     function selectTab(el) {
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
       el.classList.add('active');
-      // Kaynak değişim mantığını buraya ekleyin
     }
   </script>
 
