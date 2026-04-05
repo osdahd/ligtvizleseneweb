@@ -313,6 +313,18 @@
       width: 100%;
       padding-top: 56.25%; /* 16:9 */
       background: #050710;
+      overflow: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+      border: none;
+      display: block;
     }
 
     .iframe-placeholder {
@@ -512,7 +524,34 @@
       .team-name { font-size: 1.2rem; }
       .vs-text { font-size: 2.2rem; }
       .info-grid { grid-template-columns: 1fr; }
-      .header-inner { padding: 0 14px; }
+      .header-inner { padding: 0 10px; }
+
+      /* Player mobil düzeltmesi */
+      .stream-section { padding: 0 0 40px; }
+      .stream-wrapper { border-radius: 0; border-left: none; border-right: none; }
+      .iframe-container { padding-top: 62%; } /* Mobilde biraz daha yüksek */
+
+      .stream-topbar { padding: 10px 14px; }
+      .stream-title { font-size: 0.78rem; }
+
+      .source-tabs { padding: 12px 10px; gap: 6px; }
+      .tab-btn { padding: 6px 10px; font-size: 0.72rem; }
+
+      /* Header mobil */
+      .logo { font-size: 1.2rem; }
+      .viewer-counter { padding: 4px 10px; font-size: 0.75rem; }
+      .live-badge { padding: 4px 10px; font-size: 0.75rem; }
+
+      /* Hero mobil */
+      .hero { padding: 24px 14px 20px; }
+      .league-tag { font-size: 0.65rem; letter-spacing: 1.5px; }
+      .team-city { font-size: 0.65rem; }
+    }
+
+    @media (max-width: 380px) {
+      .viewer-counter { display: none; } /* Çok küçük ekranda sayacı gizle */
+      .team-name { font-size: 1rem; letter-spacing: 1px; }
+      .iframe-container { padding-top: 70%; }
     }
   </style>
 </head>
@@ -575,7 +614,7 @@
       </div>
 
       <div class="iframe-container" id="streamContainer">
-        <iframe src="https://playertv123.blogspot.com/?m=0" scrolling="no" frameborder="0" allowfullscreen="true" style="position:absolute;inset:0;width:100%;height:100%;border:none;"></iframe>
+        <iframe src="https://playertv123.blogspot.com/?m=0" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; fullscreen; encrypted-media; picture-in-picture"></iframe>
       </div>
 
       <!-- Kaynak sekmeleri -->
